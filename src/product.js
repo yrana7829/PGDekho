@@ -1,9 +1,13 @@
+import img1 from './assets/image/img1.jpg';
+import img2 from './assets/image/img2.jpg';
+import img3 from './assets/image/img3.jpg';
+
 const properties = [
   {
     id: 1,
-    areaImage: "./assets/image/img2.jpg",
-    name: "Property 1",
-    location: "Location 1",
+    areaImage: img1,
+    name: 'Property 1',
+    location: 'Location 1',
     roomPrices: {
       singleRoom: 100,
       doubleRoom: 150,
@@ -14,11 +18,12 @@ const properties = [
     bath: 2,
     garage: true,
   },
+
   {
     id: 2,
-    areaImage: "./assets/image/img3.jpg",
-    name: "Property 2",
-    location: "Location 2",
+    areaImage: img2,
+    name: 'Property 2',
+    location: 'Location 2',
     roomPrices: {
       singleRoom: 80,
       doubleRoom: 120,
@@ -31,9 +36,9 @@ const properties = [
   },
   {
     id: 3,
-    areaImage: "./assets/image/img4.jpg",
-    name: "Property 3",
-    location: "Location 3",
+    areaImage: img3,
+    name: 'Property 3',
+    location: 'Location 3',
     roomPrices: {
       singleRoom: 90,
       doubleRoom: 140,
