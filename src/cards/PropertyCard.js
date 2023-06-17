@@ -4,9 +4,10 @@ import { FaRuler, FaBed, FaBath, FaCar } from 'react-icons/fa';
 import properties from '../product';
 
 const PropertyCard = () => {
+  const firstThreeProperties = properties.slice(0, 3);
   return (
     <Row>
-      {properties.map((property) => (
+      {firstThreeProperties.map((property) => (
         <Col key={property.id} className='mb-4'>
           <Card className='property-card'>
             <CardImg
