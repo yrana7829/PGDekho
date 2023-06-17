@@ -1,4 +1,4 @@
-/* navbar css */
+/* navbar css starts*/
 
 .navbar {
   width: 100vw;
@@ -109,6 +109,10 @@
   }
 }
 
+/* navbar css endss*/
+
+/* Banner CSS starts */
+
 .banner {
   background: linear-gradient(
     89.92deg,
@@ -152,8 +156,7 @@
 
   color: #222222;
 }
-.grid-item {
-}
+
 .count {
   width: 81px;
   height: 46px;
@@ -255,10 +258,9 @@
 }
 
 .homeSection1 {
-  border: #222222 1px solid;
   /* position: absolute; */
   width: 88%;
-  height: 450px;
+  height: 500px;
   margin-left: 6%;
   margin-right: 6%;
   margin-top: 10px;
@@ -268,7 +270,7 @@
 .homeSection2 {
   border: #222222 1px solid;
   width: 88%;
-  height: 450px;
+  height: 500px;
   margin-left: 6%;
   margin-right: 6%;
   margin-top: 10px;
@@ -277,17 +279,125 @@
 .homeSection3 {
   border: #222222 1px solid;
   width: 88%;
-  height: 450px;
+  height: 500px;
   margin-left: 6%;
   margin-right: 6%;
   margin-top: 10px;
 }
 
+/* Property cards section */
+
+.property-card {
+  /* height: 100%; */
+}
+
 .property-image {
   width: 100%;
-  height: 200px;
+  height: 175px;
   object-fit: cover; /* Adjust as needed (e.g., cover, contain, etc.) */
 }
+
+/* Room price details div css */
+
+.Room-Title {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.3797px;
+  line-height: 19px;
+  /* or 150% */
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.Room-location {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.5385px;
+  line-height: 130%;
+  /* or 15px */
+  letter-spacing: 0.01em;
+  /* nav-gray */
+  color: #7d7f88;
+}
+
+.Room-price-div {
+  background-color: #e3e3e7;
+  box-sizing: border-box;
+  /* width: 379px; */
+  height: 63.54px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: #f5f4f8;
+  border: 0.40991px solid #e3e3e7;
+  border-radius: 8.1982px;
+}
+.Room-price-cols:first-child,
+.Room-price-cols:nth-child(2) {
+  border-right: 0.491892px solid #d6d6d6;
+  margin-left: 25px;
+  height: 80%;
+  margin-top: 5px;
+}
+.Room-price-cols:nth-child(3) {
+  margin-left: 5px;
+  height: 80%;
+  margin-top: 5px;
+}
+
+.Room-occupancy {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Room-occupancy span {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #7d7f88;
+}
+
+.Room-occupancy-price {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0.013em;
+  color: #1a1e25;
+}
+
+/* Room area details div css */
+.Area-details {
+  margin-top: 15px;
+}
+.Room-area-details {
+  font-family: 'Bahnschrift';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 10.2481px;
+  /* or 681% */
+
+  color: #282431;
+
+  opacity: 0.5;
+}
+.Room-card-btn {
+  margin-top: 10px;
+  background-color: #fa6e42;
+}
+
+/* SignUp Modal Styling starts*/
 
 .signUpModalBody {
   height: 400px;
@@ -326,8 +436,6 @@
   background-color: #fa6e42;
   border-radius: 11.3671px;
 }
-
-/* CSS for Signup Modal */
 
 .singup-modal-sec2 {
   top: 125px;
@@ -382,7 +490,7 @@
   font-size: 16px;
 }
 .singup-modal-sec23 {
-  width: "362px";
+  width: '362px';
   height: 56.84px;
 
   border-radius: 11.37px;
@@ -417,13 +525,6 @@
   background: #fcfcfc;
 }
 
-/* Remove the explicit height values for responsive behavior */
-.singup-modal-sec21 {
-}
-
-.singup-modal-sec22 {
-}
-
 .singup-modal-sec24,
 .singup-modal-sec23 {
   width: 362px;
@@ -438,18 +539,6 @@
   border: 0.909364px solid #e3e3e7;
   border-radius: 11.3671px;
 }
-/* .signModalBoder {
-  width: 100%;
-  border-top: 1px solid #e3e3e7;
-}
-.signModalLoginWith {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10%;
-  background: white;
-  font-size: x-large;
-} */
 
 .signModalBoder {
   width: 100%;
@@ -483,6 +572,9 @@
   border: 0.909364px solid #e3e3e7;
   border-radius: 11.3671px;
 }
+
+/* SignUp Modal Styling ends*/
+
 .location-1 {
   position: absolute;
   width: 15%;
@@ -501,7 +593,7 @@
   left: 54%;
   top: 58%;
 
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
