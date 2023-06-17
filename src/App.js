@@ -2,6 +2,7 @@ import "./index.css";
 import PropertyCard from "./components/PropertyCard";
 import properties from "./product";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "react-input-range/lib/css/index.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

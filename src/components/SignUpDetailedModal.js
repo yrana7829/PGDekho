@@ -96,7 +96,11 @@ const SignUpDetailedModal = ({ handleClose }) => {
 
   return (
     <>
-      <Modal show={true} onHide={handleClose} style={{ marginTop: "5%" }}>
+      <Modal
+        show={true}
+        onHide={handleClose}
+        style={{ marginTop: "5%", border: "2px blue solid" }}
+      >
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <Row>
@@ -253,5 +257,4 @@ const SignUpDetailedModal = ({ handleClose }) => {
     </>
   );
 };
-
 export default SignUpDetailedModal;
