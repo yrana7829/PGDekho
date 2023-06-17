@@ -1,6 +1,6 @@
-import React from "react";
-import PropertyCard from "./PropertyCard";
-import properties from "../product";
+import React from 'react';
+import PropertyCard from '../cards/PropertyCard';
+import properties from '../product';
 
 const Properties = () => {
   return (
