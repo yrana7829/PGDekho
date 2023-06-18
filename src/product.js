@@ -129,5 +129,20 @@ const properties = [
     bath: 1,
     garage: false,
   },
+  {
+    id: 8,
+    areaImage: img8,
+    name: 'Property 8',
+    location: 'Location 8',
+    roomPrices: {
+      singleRoom: 75,
+      doubleRoom: 120,
+      threeRoom: 165,
+    },
+    area: 900,
+    totalBeds: 1,
+    bath: 1,
+    garage: false,
+  },
 ];
 export default properties;
