@@ -935,3 +935,101 @@
   margin-left: 150px;
   margin-top: -10px;
 }
+
+.prop-btn {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  margin: 2%;
+  width: 49px;
+  height: 36px;
+  background: #ebeaee;
+  border-radius: 20px;
+  color: #090909;
+  border: none;
+  font-weight: 500;
+}
+.prop-btn:hover {
+  background: #fa6e42; /* Background color on hover */
+}
+.btn-bootom {
+  min-width: 98px;
+  width: auto;
+  height: 48px;
+  align-items: center;
+  background: #dfdfdf;
+  border-radius: 10px;
+  border: none;
+  color: #7d7f88;
+}
+.btn-bootom:hover {
+  background: #fa6e42; /* Background color on hover */
+}
+.price-slider-container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+.price-cone {
+  position: absolute;
+  bottom: -22%;
+
+  border-top: 25px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-left: 450px solid rgb(246, 156, 85);
+}
+.input-range .input-range__track {
+  background-color: orange;
+}
+
+/* property-detail-page -css */
+
+.prop-img-1 {
+  position: absolute;
+  width: 825.89px;
+  height: 527.48px;
+  left: 129px;
+  top: 145.26px;
+
+  border-radius: 21.015px;
+}
+.prop-img-2 {
+  position: absolute;
+  width: 505px;
+  height: 236px;
+  left: 984px;
+  top: 145.26px;
+
+  border-radius: 15.01px;
+  box-sizing: border-box;
+  background-size: cover;
+}
+.prop-img-3 {
+  position: absolute;
+  width: 505px;
+  height: 236px;
+  left: 984px;
+  top: 433px;
+  background-size: cover;
+  border-radius: 15.01px;
+  box-sizing: border-box;
+}
+.book-site {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 131px;
+  top: 713px;
+}
+.book-site-1 {
+  position: absolute;
+  width: 681px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
