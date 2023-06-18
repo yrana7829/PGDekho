@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 import Banner from './Banner';
 import NavBar from './Navbar';
 import Footer from './Footer';
 import PropertyCard from '../cards/PropertyCard';
 import RecommendedPropCard from '../cards/RecomendedPropCard';
 import img from '../assets/image/img7.jpg';
+import PopularPropCard from '../cards/PopularPropCard';
 
 const Home = () => {
   return (
@@ -13,9 +16,15 @@ const Home = () => {
 
       <Banner />
       <div className='homeSection1'>
-        <h2 className='homeSectionHeading'>Nearby Your Location</h2>
+        <h2 className='homeSection1Heading'>
+          Nearby Your Location{' '}
+          <Link to='/all-properties' className='seeAllText'>
+            See All
+          </Link>
+        </h2>
         <PropertyCard />
       </div>
+
       <div className='homeSection2'>
         <h2 className='homeSectionHeading'>Recommended Properties</h2>
         <RecommendedPropCard />
@@ -38,7 +47,50 @@ const Home = () => {
       </div>
 
       <div className='homeSection5'>
-        <h2 className='homeSectionHeading'>Popular Properties</h2>
+        <h2 className='homeSection1Heading'>
+          Popular Properties
+          <Link to='/all-properties' className='seeAllText'>
+            See All
+          </Link>
+        </h2>
+        <div className='homeSection5Buttons'>
+          <Button
+            className='prop-btn'
+            style={{
+              width: '7%',
+              height: '35px',
+              marginTop: '10px',
+              marginLeft: '0',
+            }}
+          >
+            ALL
+          </Button>
+          <Button
+            className='prop-btn'
+            style={{ width: '7%', height: '35px', marginTop: '10px' }}
+          >
+            PG
+          </Button>
+          <Button
+            className='prop-btn'
+            style={{ width: '7%', height: '35px', marginTop: '10px' }}
+          >
+            RK
+          </Button>
+          <Button
+            className='prop-btn'
+            style={{ width: '7%', height: '35px', marginTop: '10px' }}
+          >
+            1BHK
+          </Button>
+          <Button
+            className='prop-btn'
+            style={{ width: '7%', height: '35px', marginTop: '10px' }}
+          >
+            2BHK
+          </Button>
+        </div>
+        <PopularPropCard />
       </div>
       {/* <Map /> */}
       <Footer />
