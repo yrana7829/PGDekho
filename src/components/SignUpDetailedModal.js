@@ -100,11 +100,7 @@ const SignUpDetailedModal = ({ handleClose }) => {
   return (
     <>
       {currentModal && (
-        <Modal
-          show={true}
-          onHide={handleClose}
-          style={{ marginTop: "5%", border: "2px blue solid" }}
-        >
+        <Modal show={true} onHide={handleClose} style={{ marginTop: "5%" }}>
           <Modal.Header closeButton></Modal.Header>
           <Modal.Body>
             <Row>
@@ -218,34 +214,28 @@ const SignUpDetailedModal = ({ handleClose }) => {
 
                   <div className="text-center" style={{ marginTop: "5%" }}>
                     <Button
-                      variant="primary"
                       onClick={handleReset}
                       style={{
-                        marginRight: "30px",
-                        marginLeft: "-25%",
-                        background: " #DFDFDF",
+                        width: "20%",
+                        marginTop: "0", // Set the common top margin here
                         color: "#090909",
+                        background: " none",
+                        border: "none",
                       }}
                     >
                       Reset All
-                    </Button>{" "}
+                    </Button>
                     <Button
                       variant="primary"
                       onClick={handleSkip}
-                      style={{
-                        marginRight: "30px",
-                        background: " #DFDFDF",
-                        color: "#090909",
-                      }}
+                      className="btn-bootom"
+                      style={{ marginLeft: "6%", marginTop: "0" }} // Set the common top margin here
                     >
                       Skip
                     </Button>{" "}
                     <Button
-                      style={{
-                        width: "calc(33.33% - 30px)",
-                        marginTop: "",
-                        background: "#fa6e42",
-                      }}
+                      className="btn-bootom"
+                      style={{ marginLeft: "6%", marginTop: "0" }} // Set the common top margin here
                       type="submit"
                       onClick={locationHandler}
                     >

@@ -46,7 +46,7 @@ const LocationDetailModal = ({ handleClose }) => {
       <Modal
         show={!nextModalVisible}
         onHide={handleClose}
-        style={{ marginTop: "5%", border: "2px yellow solid" }}
+        style={{ marginTop: "5%" }}
       >
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
@@ -100,25 +100,22 @@ const LocationDetailModal = ({ handleClose }) => {
                     <li>Gurugram Sector - 23, </li>
                   </ul>
                 </div>
-                <div className="text-center" style={{ marginTop: "64%" }}>
+                <div className="text-center" style={{ marginTop: "48%" }}>
                   <Button
-                    variant="primary"
                     onClick={handleReset}
                     style={{
-                      marginRight: "30px",
-                      marginLeft: "",
-                      background: "#DFDFDF",
+                      width: "20%",
+                      marginTop: "0", // Set the common top margin here
                       color: "#090909",
+                      background: " none",
+                      border: "none",
                     }}
                   >
                     Reset All
                   </Button>{" "}
                   <Button
-                    style={{
-                      width: "calc(33.33% - 30px)",
-                      marginLeft: "30px",
-                      background: "#fa6e42",
-                    }}
+                    className="btn-bootom"
+                    style={{ marginLeft: "6%", marginTop: "0" }}
                     type="submit"
                     onClick={handleSubmit}
                   >

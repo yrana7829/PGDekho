@@ -6,6 +6,7 @@ import Banner from './components/Banner';
 import Home from './components/Home';
 import SignInModal from './components/SingInModal';
 import AllPropCards from './cards/AllPropCards';
+import PropertyDetail from './components/propertyDetailedPage/PropertyDetail';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/banner' element={<Banner />} />
         <Route path='/signin' element={<SignInModal />} />
         <Route path='/all-properties' element={<AllPropCards />}></Route>
+        <Route path='/property' element={<PropertyDetail />} />
       </Routes>
     </Router>
   );
