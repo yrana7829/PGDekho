@@ -1,9 +1,9 @@
 import React from 'react';
 import { Col, Card, CardImg, Row, Button } from 'react-bootstrap';
 import { FaRuler, FaBed, FaBath, FaCar } from 'react-icons/fa';
-import properties from '../product';
-import NavBar from '../components/Navbar';
-import Footer from '../components/Footer';
+import properties from '../../product';
+import NavBar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 
 const ProductCard = ({ property }) => {
   return (

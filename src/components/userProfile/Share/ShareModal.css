@@ -1,0 +1,79 @@
+.MuiDialog-paper {
+  border-radius: 30px;
+}
+
+.MuiDialogContent-root {
+  position: relative;
+}
+
+.share-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.share-modal-icon {
+  font-size: 40px;
+  width: 64.96px;
+  height: 64.96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  /* box-shadow: 0px 9.744px 19.488px rgba(0, 0, 0, 0.2); */
+  color: #000000;
+  margin: 10px;
+}
+
+.share-modal-row {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this line to vertically center the rows */
+  margin-bottom: 50px;
+}
+
+.share-modal-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-modal-text {
+  font-size: 14px;
+  margin-top: 30px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21.112px;
+  line-height: 27px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Color/ Typography/ Paragraph */
+
+  color: #3c3e56;
+}
+.share-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: rgb(234, 228, 228);
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 45%;
+}
+.hov-image {
+  cursor: pointer;
+}

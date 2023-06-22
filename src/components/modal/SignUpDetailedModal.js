@@ -1,29 +1,29 @@
-import React, { useState } from "react";
-import { Modal, Button, Form, Row, Col } from "react-bootstrap";
-import signupimg from "../assets/image/signupimg.png";
-import LocationDetailModal from "./LocationDetailModal";
+import React, { useState } from 'react';
+import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
+import signupimg from '../../assets/image/signupimg.png';
+import LocationDetailModal from './LocationDetailModal';
 
 const SignUpDetailedModal = ({ handleClose }) => {
-  const [profession, setProfession] = useState("");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
+  const [profession, setProfession] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [number, setNumber] = useState('');
   const [termsChecked, setTermsChecked] = useState(false);
   const [LocationDetail, setLocationDetail] = useState(false);
 
-  const [professionError, setProfessionError] = useState("");
-  const [nameError, setNameError] = useState("");
-  const [emailError, setEmailError] = useState("");
-  const [numberError, setNumberError] = useState("");
-  const [termsError, setTermsError] = useState("");
+  const [professionError, setProfessionError] = useState('');
+  const [nameError, setNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [numberError, setNumberError] = useState('');
+  const [termsError, setTermsError] = useState('');
 
   const [currentModal, setcurrentModal] = useState(true);
 
   const validateProfession = () => {
-    if (profession.trim() === "") {
-      setProfessionError("Please enter your profession.");
+    if (profession.trim() === '') {
+      setProfessionError('Please enter your profession.');
     } else {
-      setProfessionError("");
+      setProfessionError('');
     }
   };
 
@@ -33,34 +33,34 @@ const SignUpDetailedModal = ({ handleClose }) => {
   };
 
   const validateName = () => {
-    if (name.trim() === "") {
-      setNameError("Please enter your name.");
+    if (name.trim() === '') {
+      setNameError('Please enter your name.');
     } else {
-      setNameError("");
+      setNameError('');
     }
   };
 
   const validateEmail = () => {
-    if (email.trim() === "") {
-      setEmailError("Please enter your email.");
+    if (email.trim() === '') {
+      setEmailError('Please enter your email.');
     } else {
-      setEmailError("");
+      setEmailError('');
     }
   };
 
   const validateNumber = () => {
-    if (number.trim() === "") {
-      setNumberError("Please enter your mobile number.");
+    if (number.trim() === '') {
+      setNumberError('Please enter your mobile number.');
     } else {
-      setNumberError("");
+      setNumberError('');
     }
   };
 
   const validateTerms = () => {
     if (!termsChecked) {
-      setTermsError("Please agree to the terms and conditions.");
+      setTermsError('Please agree to the terms and conditions.');
     } else {
-      setTermsError("");
+      setTermsError('');
     }
   };
 
@@ -80,16 +80,16 @@ const SignUpDetailedModal = ({ handleClose }) => {
       !numberError &&
       !termsError
     ) {
-      console.log("Form submitted!");
+      console.log('Form submitted!');
       handleClose(); // Close the modal after successful submission
     }
   };
 
   const handleReset = () => {
-    setProfession("");
-    setName("");
-    setEmail("");
-    setNumber("");
+    setProfession('');
+    setName('');
+    setEmail('');
+    setNumber('');
     setTermsChecked(false);
   };
 
@@ -100,143 +100,143 @@ const SignUpDetailedModal = ({ handleClose }) => {
   return (
     <>
       {currentModal && (
-        <Modal show={true} onHide={handleClose} style={{ marginTop: "5%" }}>
+        <Modal show={true} onHide={handleClose} style={{ marginTop: '5%' }}>
           <Modal.Header closeButton></Modal.Header>
           <Modal.Body>
             <Row>
-              <Col className="col-6">
-                <img src={signupimg} alt="Image" className="img-fluid" />
+              <Col className='col-6'>
+                <img src={signupimg} alt='Image' className='img-fluid' />
               </Col>
-              <Col className="col-6">
-                <div className="singup-modal-sec21">
+              <Col className='col-6'>
+                <div className='singup-modal-sec21'>
                   Let’s Know You Better
-                  <div className="singup-modal-sec22">
+                  <div className='singup-modal-sec22'>
                     Lorem ipsum dolor sit amet consectetur. Neque pellentesque
                     nunc lacus dolor ultricies
                   </div>
                 </div>
                 <Form
                   onSubmit={handleSubmit}
-                  style={{ marginTop: "15%", marginLeft: "5%" }}
+                  style={{ marginTop: '15%', marginLeft: '5%' }}
                 >
                   <Form.Group>
-                    <Form.Label style={{ marginTop: "1%" }}>
+                    <Form.Label style={{ marginTop: '1%' }}>
                       <h6>I am an</h6>
                     </Form.Label>
                     <div>
                       <Button
-                        variant="secondary"
-                        onClick={() => setProfession("Individual")}
-                        active={profession === "Individual"}
+                        variant='secondary'
+                        onClick={() => setProfession('Individual')}
+                        active={profession === 'Individual'}
                         style={{
-                          marginRight: "10px",
-                          background: "#F5F4F8",
-                          color: "black",
+                          marginRight: '10px',
+                          background: '#F5F4F8',
+                          color: 'black',
                         }}
                       >
                         Individual
                       </Button>
                       <Button
-                        variant="secondary"
-                        onClick={() => setProfession("Agent")}
-                        active={profession === "Agent"}
-                        style={{ marginLeft: "50px", background: "#fa6e42" }}
+                        variant='secondary'
+                        onClick={() => setProfession('Agent')}
+                        active={profession === 'Agent'}
+                        style={{ marginLeft: '50px', background: '#fa6e42' }}
                       >
                         Agent
                       </Button>
                     </div>
                     {professionError && (
-                      <div className="error-message">{professionError}</div>
+                      <div className='error-message'>{professionError}</div>
                     )}
                   </Form.Group>
 
                   <Form.Group>
-                    <Form.Label style={{ marginTop: "2%" }}>
+                    <Form.Label style={{ marginTop: '2%' }}>
                       <h6>Your Name</h6>
                     </Form.Label>
                     <Form.Control
-                      type="text"
-                      placeholder="Enter Your Name"
+                      type='text'
+                      placeholder='Enter Your Name'
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       onBlur={validateName}
                     />
                     {nameError && (
-                      <div className="error-message">{nameError}</div>
+                      <div className='error-message'>{nameError}</div>
                     )}
                   </Form.Group>
 
                   <Form.Group>
-                    <Form.Label style={{ marginTop: "2%" }}>
+                    <Form.Label style={{ marginTop: '2%' }}>
                       <h6>Email</h6>
                     </Form.Label>
                     <Form.Control
-                      type="email"
-                      placeholder="Enter Your Email"
+                      type='email'
+                      placeholder='Enter Your Email'
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       onBlur={validateEmail}
                     />
                     {emailError && (
-                      <div className="error-message">{emailError}</div>
+                      <div className='error-message'>{emailError}</div>
                     )}
                   </Form.Group>
 
                   <Form.Group>
-                    <Form.Label style={{ marginTop: "2%" }}>
+                    <Form.Label style={{ marginTop: '2%' }}>
                       <h6>Mobile Number</h6>
                     </Form.Label>
                     <Form.Control
-                      type="text"
-                      placeholder="Enter Your Number"
+                      type='text'
+                      placeholder='Enter Your Number'
                       value={number}
                       onChange={(e) => setNumber(e.target.value)}
                       onBlur={validateNumber}
                     />
                     {numberError && (
-                      <div className="error-message">{numberError}</div>
+                      <div className='error-message'>{numberError}</div>
                     )}
                   </Form.Group>
 
                   <Form.Group>
                     <Form.Check
-                      type="checkbox"
-                      label="I agree to the terms and conditions"
+                      type='checkbox'
+                      label='I agree to the terms and conditions'
                       checked={termsChecked}
                       onChange={(e) => setTermsChecked(e.target.checked)}
                       onBlur={validateTerms}
-                      style={{ marginTop: "1%" }}
+                      style={{ marginTop: '1%' }}
                     />
                     {termsError && (
-                      <div className="error-message">{termsError}</div>
+                      <div className='error-message'>{termsError}</div>
                     )}
                   </Form.Group>
 
-                  <div className="text-center" style={{ marginTop: "5%" }}>
+                  <div className='text-center' style={{ marginTop: '5%' }}>
                     <Button
                       onClick={handleReset}
                       style={{
-                        width: "20%",
-                        marginTop: "0", // Set the common top margin here
-                        color: "#090909",
-                        background: " none",
-                        border: "none",
+                        width: '20%',
+                        marginTop: '0', // Set the common top margin here
+                        color: '#090909',
+                        background: ' none',
+                        border: 'none',
                       }}
                     >
                       Reset All
                     </Button>
                     <Button
-                      variant="primary"
+                      variant='primary'
                       onClick={handleSkip}
-                      className="btn-bootom"
-                      style={{ marginLeft: "6%", marginTop: "0" }} // Set the common top margin here
+                      className='btn-button'
+                      style={{ marginLeft: '6%', marginTop: '0' }} // Set the common top margin here
                     >
                       Skip
-                    </Button>{" "}
+                    </Button>{' '}
                     <Button
-                      className="btn-bootom"
-                      style={{ marginLeft: "6%", marginTop: "0" }} // Set the common top margin here
-                      type="submit"
+                      className='btn-button'
+                      style={{ marginLeft: '6%', marginTop: '0' }} // Set the common top margin here
+                      type='submit'
                       onClick={locationHandler}
                     >
                       Next

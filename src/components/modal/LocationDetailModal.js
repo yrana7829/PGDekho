@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import { Modal, Button, Form, Row, Col } from "react-bootstrap";
-import signupimg from "../assets/image/signupimg.png";
-import { FaTimes } from "react-icons/fa";
-import PropSearchModal from "./PropSearchModal";
+import React, { useState } from 'react';
+import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
+import signupimg from '../../assets/image/signupimg.png';
+import { FaTimes } from 'react-icons/fa';
+import PropSearchModal from './PropSearchModal';
 
 const LocationDetailModal = ({ handleClose }) => {
-  const [name, setName] = useState("");
-  const [nameError, setNameError] = useState("");
+  const [name, setName] = useState('');
+  const [nameError, setNameError] = useState('');
   const [nextModalVisible, setNextModalVisible] = useState(false);
 
   const validateName = () => {
-    if (name.trim() === "") {
-      setNameError("Please enter your name.");
+    if (name.trim() === '') {
+      setNameError('Please enter your name.');
     } else {
-      setNameError("");
+      setNameError('');
     }
   };
 
@@ -23,13 +23,13 @@ const LocationDetailModal = ({ handleClose }) => {
     validateName();
 
     if (!nameError) {
-      console.log("Form submitted!");
+      console.log('Form submitted!');
       setNextModalVisible(true);
     }
   };
 
   const handleReset = () => {
-    setName("");
+    setName('');
   };
 
   const handleSkip = () => {
@@ -46,77 +46,77 @@ const LocationDetailModal = ({ handleClose }) => {
       <Modal
         show={!nextModalVisible}
         onHide={handleClose}
-        style={{ marginTop: "5%" }}
+        style={{ marginTop: '5%' }}
       >
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <Row>
-            <Col className="col-6">
-              <img src={signupimg} alt="Image" className="img-fluid" />
+            <Col className='col-6'>
+              <img src={signupimg} alt='Image' className='img-fluid' />
             </Col>
-            <Col className="col-6">
-              <div className="singup-modal-sec21">
+            <Col className='col-6'>
+              <div className='singup-modal-sec21'>
                 Your Are Looking To Buy In
-                <div className="singup-modal-sec22">
+                <div className='singup-modal-sec22'>
                   Lorem ipsum dolor sit amet consectetur. Neque pellentesque
                   nunc lacus dolor ultricies
                 </div>
               </div>
               <Form
                 onSubmit={handleSubmit}
-                style={{ marginTop: "15%", marginLeft: "5%" }}
+                style={{ marginTop: '15%', marginLeft: '5%' }}
               >
                 <Form.Group>
-                  <Form.Label style={{ marginTop: "2%" }}>
+                  <Form.Label style={{ marginTop: '2%' }}>
                     <h6>Enter Location</h6>
                   </Form.Label>
                   <Form.Control
-                    type="text"
-                    placeholder="Enter a locality or project/society"
+                    type='text'
+                    placeholder='Enter a locality or project/society'
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     onBlur={validateName}
-                    style={{ height: "56.84px" }}
+                    style={{ height: '56.84px' }}
                   />
                   {nameError && (
-                    <div className="error-message">{nameError}</div>
+                    <div className='error-message'>{nameError}</div>
                   )}
                 </Form.Group>
                 <div>
-                  <span className="location-1">
+                  <span className='location-1'>
                     Gurugram, Haryana
                     <FaTimes />
                   </span>
-                  <span className="location-1" style={{ marginLeft: "19%" }}>
+                  <span className='location-1' style={{ marginLeft: '19%' }}>
                     Gurugram, Haryana
                     <FaTimes />
                   </span>
                 </div>
-                <div className="localities">
+                <div className='localities'>
                   <h6>Popular Localities in New Delhi</h6>
-                  <ul style={{ listStyleType: "none", padding: 0 }}>
+                  <ul style={{ listStyleType: 'none', padding: 0 }}>
                     <li>Gurugram Sector -22</li>
                     <li>Gurugram Sector - 44,</li>
                     <li>Gurugram Sector - 23, </li>
                   </ul>
                 </div>
-                <div className="text-center" style={{ marginTop: "48%" }}>
+                <div className='text-center' style={{ marginTop: '48%' }}>
                   <Button
                     onClick={handleReset}
                     style={{
-                      width: "20%",
-                      marginTop: "0", // Set the common top margin here
-                      color: "#090909",
-                      background: " none",
-                      border: "none",
+                      width: '20%',
+                      marginTop: '0', // Set the common top margin here
+                      color: '#090909',
+                      background: ' none',
+                      border: 'none',
                     }}
                   >
                     Reset All
-                  </Button>{" "}
+                  </Button>{' '}
                   <Button
-                    className="btn-bootom"
-                    style={{ marginLeft: "6%", marginTop: "0" }}
-                    type="submit"
+                    className='btn-button'
+                    style={{ marginLeft: '6%', marginTop: '0' }}
+                    type='submit'
                     onClick={handleSubmit}
                   >
                     Next

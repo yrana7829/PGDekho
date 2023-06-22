@@ -1,7 +1,10 @@
 import React from 'react';
 import { Card, Row, Col, Button, CardImg, Nav } from 'react-bootstrap';
 import { FaRuler, FaBed, FaBath, FaCar } from 'react-icons/fa';
-import properties from '../product';
+import properties from '../../product';
+import CircleCallButton from '../btn/CircleCallButton';
+import CircleShareButton from '../btn/CircleShareButton';
+import './PropertyCard.css';
 
 const PropertyCard = () => {
   const firstThreeProperties = properties.slice(0, 3);
@@ -10,18 +13,41 @@ const PropertyCard = () => {
       {firstThreeProperties.map((property) => (
         <Col key={property.id} className='mb-4'>
           <Card className='property-card'>
-            <CardImg
-              src={property.areaImage}
-              variant='top'
-              className='property-image'
-            />
             <Card.Body className='d-flex flex-column justify-content-between'>
-              <div>
-                <Card.Title className='Room-Title'>{property.name}</Card.Title>
-                <Card.Text className='Room-location'>
-                  {property.location}
-                </Card.Text>
+              <div className='d-flex'>
+                <div className='mr-1'>
+                  <CardImg
+                    src={property.areaImage}
+                    variant='top'
+                    className='property-image1'
+                  />
+                </div>
+                <div className='ml-1'>
+                  <CardImg
+                    src={property.areaImage2}
+                    variant='top'
+                    className='property-image2'
+                    style={{ textAlign: 'right' }}
+                  />
+                </div>
               </div>
+
+              <div className='title-div'>
+                <div className='title-div-inner'>
+                  <Card.Title className='Room-Title'>
+                    {property.name}
+                  </Card.Title>
+                  <Card.Text className='Room-location'>
+                    {property.location}
+                  </Card.Text>
+                </div>
+
+                <div className='title-btn-div'>
+                  <CircleShareButton />
+                  <CircleCallButton />
+                </div>
+              </div>
+
               <div>
                 <Row className='Room-price-div'>
                   <Col className='Room-price-cols'>
@@ -78,7 +104,20 @@ const PropertyCard = () => {
                     </Row>
                   </Col>
                   <Col xs={4}>
-                    <Button variant='success' className='w-100 Room-card-btn'>
+                    <Button
+                      variant='success'
+                      className='w-100 btn-button'
+                      style={{
+                        marginTop: '10px',
+                        width: '85.55px',
+                        height: '32.9px',
+                        padding: '0',
+                        border: '0.441199px solid #FA6E42',
+                        borderRadius: '7.73967px',
+                        color: '#FA6E42',
+                        background: '#FFFFFF',
+                      }}
+                    >
                       Book
                     </Button>
                   </Col>
