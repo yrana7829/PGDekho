@@ -1,0 +1,79 @@
+.persnoladetail {
+  height: 100vh;
+  width: 100vh;
+}
+
+.per-outer-circle {
+  position: relative;
+  margin-top: 8rem;
+  margin-left: 40%;
+  margin-bottom: -4rem;
+  margin-right: auto;
+  transform: translate(-50%, -50%);
+  height: 170px;
+  width: 170px;
+  border: 3px solid #d2d2d2;
+  border-radius: 50%;
+}
+
+.per-inner-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  height: 160px;
+  width: 160px;
+  border: 3px solid #d2d2d2;
+  border-radius: 50%;
+}
+
+.per-inner-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+
+  gap: 10px;
+  width: 100%;
+  height: 57px;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+}
+
+.input-texts {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #101010;
+  margin-top: -20%;
+}
+
+.per-gen3der {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #101010;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.Gender-type {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}

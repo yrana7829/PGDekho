@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from '../Navbar';
-import Footer from '../Footer';
+import NavBar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 import properties from '../../product';
 import { Col, Row, Button } from 'react-bootstrap';
 import { FaBluetooth, FaPhoneAlt } from 'react-icons/fa';

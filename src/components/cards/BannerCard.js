@@ -9,21 +9,25 @@ import {
   FaPhoneAlt,
 } from 'react-icons/fa';
 
-import properties from '../product';
+import properties from '../../product';
 
-const PopularPropCard = () => {
-  const firstFourProperties = properties.slice(0, 4);
+const BannerCard = () => {
+  const firstFourProperties = properties.slice(0, 1);
   return (
     <Row>
       {firstFourProperties.map((property) => (
-        <Col key={property.id} className='mb-4'>
+        <Col key={property.id} className='mb-2' style={{ height: '400px' }}>
           <Card className='property-card'>
             <CardImg
               src={property.areaImage}
               variant='top'
               className='property-image'
+              style={{ height: '10%' }}
             />
-            <Card.Body className='d-flex flex-column justify-content-between'>
+            <Card.Body
+              className='d-flex flex-column justify-content-between'
+              style={{ height: '60%' }}
+            >
               <div>
                 <Row className='Room-info'>
                   <Col>
@@ -96,4 +100,4 @@ const PopularPropCard = () => {
   );
 };
 
-export default PopularPropCard;
+export default BannerCard;

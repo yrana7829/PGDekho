@@ -1,0 +1,339 @@
+/* Banner CSS starts */
+
+.banner {
+  height: 750px;
+  background: linear-gradient(
+    89.92deg,
+    #f7f7fd 46.47%,
+    rgba(247, 247, 253, 0) 99.93%
+  );
+}
+.banner-heading {
+  position: absolute;
+  width: 553px;
+  height: 210px;
+  margin-left: -20px;
+  top: 175px;
+
+  font-family: Plus Jakarta Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 70px;
+  /* or 140% */
+
+  letter-spacing: 0.01em;
+
+  color: #222222;
+}
+.bannerQuotes {
+  position: absolute;
+  width: 500px;
+  height: 60px;
+  left: 132px;
+  top: 411px;
+
+  font-family: Plus Jakarta Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 188% */
+
+  letter-spacing: 0.01em;
+
+  color: #222222;
+}
+
+.count {
+  width: 81px;
+  height: 46px;
+  top: 523px;
+  position: absolute;
+  width: 69px;
+  height: 0px;
+  left: 131px;
+}
+.renterCount {
+  position: absolute;
+  width: 81px;
+  height: 38px;
+
+  font-family: Plus Jakarta Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #fa6e42;
+}
+.proprtyCount {
+  position: absolute;
+  width: 81px;
+  height: 38px;
+  left: 200px;
+
+  font-family: Plus Jakarta Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #fa6e42;
+
+  /* identical to box height */
+}
+.renterCountdiv1 {
+  border-left: 1px solid #fa6e42;
+  padding-right: 0px;
+  margin-left: 0px;
+}
+
+#count-headings {
+  padding-left: 20px;
+
+  width: 81px;
+  height: 38px;
+  left: 158px;
+  top: 523px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #fa6e42;
+}
+
+#count-texts {
+  padding-left: 20px;
+  width: 60px;
+  height: 20px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #222222;
+}
+
+.categories {
+  position: absolute;
+  width: 500px;
+  height: 66px;
+  left: 130px;
+  top: 645px;
+
+  background: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 2px solid #fa6e42;
+}
+.cat-content {
+  width: 19px;
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-top: 19px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+
+  color: #222222;
+}
+
+.requirmentFilter {
+  position: absolute;
+  width: 1050px;
+  height: 105px;
+  left: 119px;
+  top: 713px;
+  background: #ffffff;
+  border-radius: 10px;
+
+  /* Add Flexbox properties */
+  display: flex;
+}
+
+.vertical-part1 {
+  /* Divide vertically */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  padding-left: 30px;
+}
+.vertical-part2 {
+  /* Divide vertically */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  padding-left: 50px;
+  margin-top: -5px;
+}
+
+.horizontal-part1 {
+  /* Take remaining space */
+  flex: 1;
+  margin-top: 25px;
+
+  height: 20px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+
+  color: #222222;
+}
+.horizontal-part2 {
+  /* Take remaining space */
+  flex: 1;
+  margin-top: 10px;
+  margin-left: 25px;
+
+  height: 15px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+
+  color: #222222;
+
+  opacity: 0.5;
+}
+.vertical-line {
+  height: 55px;
+  width: 0.1px;
+  margin-left: 2%;
+  border: #505050 1px solid;
+  margin-top: 20px;
+  opacity: 70%;
+}
+.horizontal-part3 {
+  /* Take remaining space */
+  flex: 1;
+  margin-top: 10px;
+  margin-left: 0px;
+
+  height: 15px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+
+  color: #222222;
+
+  opacity: 0.5;
+}
+
+.right-content2 {
+  /* border: 1px solid red; */
+  font-size: 30px;
+  text-align: right;
+  margin-left: 190px;
+  opacity: 0.5;
+}
+.filter {
+  margin-left: 220px;
+}
+
+.Filterdivs {
+  width: 261.66px;
+  height: 100%;
+}
+
+.location {
+  width: 69px;
+  height: 20px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+
+  color: #222222;
+}
+
+.location-icon {
+  color: #fa6e42;
+  padding: 5px;
+}
+.location-text {
+  margin-top: 50px;
+}
+
+.horizontal-part4 {
+  flex: 1;
+  margin-top: 24px;
+  margin-left: 0px;
+  text-align: center;
+}
+
+.search {
+  width: 56px;
+  height: 20px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+
+  color: #f2f2f2;
+}
+.search-botton {
+  width: 209px;
+  height: 57px;
+  left: 684px;
+  top: 727px;
+  color: #fa6e42;
+  background-color: #fa6e42;
+  border-radius: 10px;
+}
+
+.add-more {
+  position: absolute;
+  width: 57px;
+  height: 15px;
+  left: 30px;
+
+  font-family: Plus Jakarta Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+
+  color: #222222;
+
+  opacity: 0.5;
+}
+
+/* Banner map and cards  */

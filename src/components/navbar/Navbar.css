@@ -1,0 +1,129 @@
+/* navbar css starts*/
+
+.navbar {
+  width: 100vw;
+  height: 95px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 32px 64px -12px rgba(9, 9, 9, 0.1);
+}
+
+.logo-img {
+  width: 166.64px;
+  height: 47px;
+  margin-left: 10px;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: #fff;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.post-button,
+.signup-button {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+.post-button {
+  position: absolute;
+  top: 19px;
+  right: 250px;
+  width: 209px;
+  height: 50px;
+  border: 1px solid #fff;
+  background: #fa6e42;
+  border-radius: 10px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+
+  color: #f2f2f2;
+}
+
+.signup-button {
+  position: absolute;
+  top: 19px;
+  right: 50px;
+  width: 133px;
+  height: 50px;
+  background: #fa6e42; /* Updated */
+  color: #fff; /* Updated */
+  border: 1px solid #fa6e42;
+  border-radius: 10px;
+
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+
+  color: #f2f2f2;
+}
+
+.signup-button:hover,
+.signup-button:focus {
+  background-color: #fff;
+  color: #fa6e42;
+}
+
+.post-button:hover,
+.post-button:focus {
+  background-color: #fff;
+  color: #fa6e42;
+  border: 1px solid #fa6e42;
+}
+
+@media (min-width: 1237px) and (max-width: 1440px) {
+  .post-button {
+    right: 250px;
+  }
+
+  .signup-button {
+    right: 50px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .post-button {
+    right: 250px;
+  }
+
+  .signup-button {
+    right: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .post-button,
+  .signup-button {
+    position: relative;
+    width: 100%;
+    margin: 8px;
+    right: 0;
+  }
+
+  .post-button:hover,
+  .post-button:focus,
+  .signup-button:hover,
+  .signup-button:focus {
+    background-color: #fff;
+    color: #fa6e42;
+    border: 1px solid #fa6e42;
+  }
+}
+
+/* navbar css endss*/

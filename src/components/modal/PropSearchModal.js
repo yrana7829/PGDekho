@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
-import signupimg from '../assets/image/signupimg.png';
+import signupimg from '../../assets/image/signupimg.png';
 import { FaTimes } from 'react-icons/fa';
 import PriceScroller from './PriceScroller';
-import Home from './Home';
+import Home from '../home/Home';
 
 const PropSearchModal = ({ handleClose }) => {
   const [name, setName] = useState('');
@@ -119,14 +119,14 @@ const PropSearchModal = ({ handleClose }) => {
                   </Button>
                   <Button
                     onClick={handleSkip}
-                    className='btn-bootom'
+                    className='btn-button'
                     style={{ marginLeft: '6%', marginTop: '0' }}
                   >
                     Skip
                   </Button>
                   <Link to='/all-properties'>
                     <Button
-                      className='btn-bootom'
+                      className='btn-button'
                       style={{ marginLeft: '6%', marginTop: '0' }}
                     >
                       Show Properties

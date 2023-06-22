@@ -1,20 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
-import Banner from './Banner';
-import NavBar from './Navbar';
-import Footer from './Footer';
+import Banner from './components/Banner';
+import NavBar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 import PropertyCard from '../cards/PropertyCard';
 import RecommendedPropCard from '../cards/RecomendedPropCard';
-import img from '../assets/image/img7.jpg';
+import img from '../../assets/image/img7.jpg';
 import PopularPropCard from '../cards/PopularPropCard';
+import './home.css';
 
 const Home = () => {
   return (
     <>
       <NavBar />
-
       <Banner />
+
       <div className='homeSection1'>
         <h2 className='homeSection1Heading'>
           Nearby Your Location{' '}

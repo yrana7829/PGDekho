@@ -1,0 +1,10 @@
+.socialMediabtn {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100px;
+  height: 48px;
+
+  background: #ffffff;
+  border: 0.857143px solid #e8ecf4;
+  border-radius: 6.85715px;
+}

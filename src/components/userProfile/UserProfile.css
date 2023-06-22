@@ -1,0 +1,128 @@
+/* * {
+  background: #ffffff;
+} */
+.user-profile {
+  position: absolute;
+  width: 320px;
+  height: 750px;
+  top: 12%;
+  margin-left: -3%;
+  background: #ffffff;
+  border: 1px solid rgba(210, 210, 210, 0.3);
+  box-shadow: 0px 32px 64px -12px rgba(9, 9, 9, 0.1);
+  border-radius: 30px;
+  border-radius: 30px;
+}
+
+.font-style {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.details-section {
+  width: 30%;
+  box-sizing: border-box;
+  left: 230px;
+}
+
+.fa {
+  margin-right: 8px;
+}
+.outer-circle {
+  box-sizing: border-box;
+  position: absolute;
+  top: 4%;
+  right: 48%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  width: 80px;
+  border: 3px solid #d2d2d2;
+  border-radius: 50%;
+  margin-top: 10%;
+}
+
+.inner-circle {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  background-position: center;
+  height: 70px;
+  width: 70px;
+  border: 3px solid #d2d2d2;
+  border-radius: 50%;
+}
+.profile-name {
+  position: absolute;
+  height: 24px;
+  left: 45.33%;
+
+  top: 5%;
+  width: 70%;
+
+  /* identical to box height */
+
+  color: #305177;
+}
+.profile-perdetail {
+  position: absolute;
+  height: 5px;
+  left: 8.27%;
+  right: 37.08%;
+  top: 160px;
+  width: 70%;
+  left: 50px;
+  color: #090909;
+}
+.prof-btn {
+  box-sizing: border-box;
+
+  width: 290px;
+  height: 55px;
+  border-radius: 28px;
+}
+
+.inner-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.contain {
+  width: 290px;
+  height: 55px;
+}
+.profile-button {
+  width: 290px;
+  height: 55px;
+  border-radius: 38px;
+  margin-top: 40%;
+  background-color: #ffffff;
+  color: #090909;
+  border: none;
+  margin-bottom: -100px;
+  margin-left: 10px;
+}
+.profile-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  text-align: left;
+}
+
+.profile-button span {
+  margin-left: 1%;
+}
+.profile-button:hover {
+  background-color: #fa6e42 !important;
+  color: white !important;
+}
+
+.profile-button.active {
+  background-color: #fa6e42 !important;
+}

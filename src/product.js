@@ -11,6 +11,7 @@ const properties = [
   {
     id: 1,
     areaImage: img1,
+    areaImage2: img8,
     name: 'Property 1',
     location: 'Location 1',
     roomPrices: {
@@ -27,6 +28,7 @@ const properties = [
   {
     id: 2,
     areaImage: img2,
+    areaImage2: img7,
     name: 'Property 2',
     location: 'Location 2',
     roomPrices: {
@@ -42,6 +44,7 @@ const properties = [
   {
     id: 3,
     areaImage: img3,
+    areaImage2: img6,
     name: 'Property 3',
     location: 'Location 3',
     roomPrices: {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import properties from '../product';
+import properties from '../../product';
 
 const RecommendedPropCard = () => {
   const responsive = {
