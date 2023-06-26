@@ -7,7 +7,7 @@ const WishListbtn = () => {
         style={{
           background: 'rgba(255, 255, 255, 1)',
           padding: '5px',
-          border: '2px solid gray',
+          border: '2px solid #e0e0e0',
           borderRadius: '5px',
         }}
       >
