@@ -6,40 +6,35 @@ import { LuRuler, LuBedDouble, LuBath } from 'react-icons/lu';
 import properties from '../../product';
 import CircleCallButton from '../btn/CircleCallButton';
 import CircleShareButton from '../btn/CircleShareButton';
-import './PropertyCard.css';
-import WishListbtn from '../btn/WishListbtn';
+import './TopLocalityCard.css';
 
-const PropertyCard = () => {
+const TopLocalityCard = () => {
   const firstThreeProperties = properties.slice(0, 3);
   return (
     <Row>
       {firstThreeProperties.map((property) => (
         <Col key={property.id} className='mb-4'>
-          <Card className='property-card reduced-width'>
+          <Card className='loc-property-card loc-reduced-width'>
             <Card.Body className='d-flex flex-column justify-content-between card-body'>
               <div className='d-flex'>
-                <div className='wishlist-button-container'>
-                  <WishListbtn />
-                </div>
-
                 <div className='mr-1'>
                   <CardImg
                     src={property.areaImage}
                     variant='top'
-                    className='property-image'
+                    className='loc-property-image'
                   />
                 </div>
                 <div className='ml-1'>
                   <CardImg
                     src={property.areaImage2}
                     variant='top'
-                    className='property-image'
+                    className='loc-property-image'
                     style={{ textAlign: 'right' }}
                   />
                 </div>
               </div>
 
-              <div className='title-div'>
+              <div className='loc-title-div'>
                 <div className='title-div-inner'>
                   <Card.Title className='Room-Title'>
                     {property.name}
@@ -48,10 +43,7 @@ const PropertyCard = () => {
                     {' '}
                     dummy div to create space
                   </div>
-                  <Card.Text
-                    className='Room-location'
-                    style={{ fontSize: '15px' }}
-                  >
+                  <Card.Text className='Room-location'>
                     {property.location}
                   </Card.Text>
                 </div>
@@ -63,7 +55,7 @@ const PropertyCard = () => {
               </div>
 
               <div>
-                <Row className='Room-price-div'>
+                <Row className='loc-Room-price-div'>
                   <Col className='Room-price-cols'>
                     <div className='Room-occupancy'>
                       <span className='Room-occupancy-title'>Single</span>
@@ -89,7 +81,7 @@ const PropertyCard = () => {
                     </div>
                   </Col>
                 </Row>
-                <Row className='Area-details'>
+                <Row className='loc-Area-details'>
                   <Col xs={8}>
                     <Row className='justify-content-center align-items-center'>
                       <Col className='text-center mx-2'>
@@ -149,4 +141,4 @@ const PropertyCard = () => {
   );
 };
 
-export default PropertyCard;
+export default TopLocalityCard;

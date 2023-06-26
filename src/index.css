@@ -1,53 +1,5 @@
 /* SignUp Modal Styling starts*/
 
-/* Reccomended properties section css */
-
-.property-card-small {
-  width: 220px;
-  height: 300px;
-  margin: 0 auto;
-}
-
-.property-image-small {
-  height: 80%;
-  object-fit: cover;
-}
-
-.Room-location-small {
-  text-align: left;
-  margin-top: 10px;
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16.3px;
-  line-height: 100%;
-  /* or 16px */
-  letter-spacing: 0.02em;
-  /* Foundation /Blue/Dark */
-  color: #1a1e25;
-}
-
-.Romm-location-small-text {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13.5833px;
-  line-height: 100%;
-  /* identical to box height, or 14px */
-  letter-spacing: 0.02em;
-  /* nav-gray */
-  color: #7d7f88;
-  mix-blend-mode: normal;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-  margin-top: 5px;
-}
-
 .Room-button-icon {
   display: flex;
   justify-content: center;

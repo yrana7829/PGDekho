@@ -7,10 +7,6 @@ import { BsFilterSquare, BsSearch } from 'react-icons/bs';
 import { IoIosArrowDown } from 'react-icons/io';
 import './Banner.css';
 import bannerMap from '../../../assets/image/bannerMap.png';
-import { Map } from '@mui/icons-material';
-import MapComponent from '../../Map';
-import PopularPropCard from '../../cards/PopularPropCard';
-import BannerCard from '../../cards/BannerCard';
 
 const Banner = () => {
   const [selectedBudget, setSelectedBudget] = useState('');

@@ -1,4 +1,4 @@
-.property-card {
+.loc-property-card {
   height: 480px;
   padding: 0;
   display: flex;
@@ -15,8 +15,8 @@
   margin-right: 10px; /* Increase the value to adjust the space between cards */
 }
 
-.reduced-width {
-  width: 97%; /* Reduce the width by 5% */
+.loc-reduced-width {
+  width: 94%; /* Reduce the width by 5% */
 }
 
 .property-card .card-body {
@@ -25,17 +25,17 @@
   height: 90%;
 }
 
-.property-image {
-  width: 95%;
+.loc-property-image {
+  width: 250px;
   height: 200px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
   object-fit: cover;
   border-radius: 8.25316px 8.25316px 8px 8px;
 }
 
 /* Room title details div css */
-.title-div {
+.loc-title-div {
   height: 70px;
   margin-top: 20px;
   margin-bottom: 0px;
@@ -43,6 +43,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .title-div-inner {
@@ -64,6 +66,7 @@
 .Room-location {
   font-family: 'Plus Jakarta Sans';
   font-weight: 400;
+  font-size: 13px;
   line-height: 130%;
   letter-spacing: 0.01em;
   color: #7d7f88;
@@ -76,7 +79,7 @@
 }
 /* Room price details div css starts */
 
-.Room-price-div {
+.loc-Room-price-div {
   background-color: #e3e3e7;
   box-sizing: border-box;
   height: 85px;
@@ -85,6 +88,9 @@
   border: 0.40991px solid #e3e3e7;
   border-radius: 8.1982px;
   display: flex;
+
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .Room-price-cols:first-child,
@@ -131,9 +137,11 @@
 }
 
 /* Room area details div css */
-.Area-details {
+.loc-Area-details {
   height: 50px;
   margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .Area-details .col-xs-8 {
@@ -162,11 +170,4 @@
 .Room-card-btn {
   margin-top: 10px;
   background-color: #fa6e42;
-}
-
-.wishlist-button-container {
-  position: absolute;
-  top: 0.5%;
-  left: 0.5%;
-  transform: translate(50%, 50%);
 }

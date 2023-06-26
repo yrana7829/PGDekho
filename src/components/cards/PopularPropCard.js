@@ -1,15 +1,13 @@
 import React from 'react';
 import { Card, Row, Col, Button, CardImg } from 'react-bootstrap';
-import {
-  FaRuler,
-  FaBed,
-  FaBath,
-  FaCar,
-  FaShareAlt,
-  FaPhoneAlt,
-} from 'react-icons/fa';
-
+import { AiOutlineCar } from 'react-icons/ai';
+import { IoLocation } from 'react-icons/io5';
+import { LuRuler, LuBedDouble, LuBath } from 'react-icons/lu';
 import properties from '../../product';
+import './PopularPropCard.css';
+import CircleShareButton from '../btn/CircleShareButton';
+import CircleCallButton from '../btn/CircleCallButton';
+import WishListbtn from '../btn/WishListbtn';
 
 const PopularPropCard = () => {
   const firstFourProperties = properties.slice(0, 4);
@@ -17,56 +15,78 @@ const PopularPropCard = () => {
     <Row>
       {firstFourProperties.map((property) => (
         <Col key={property.id} className='mb-4'>
-          <Card className='property-card'>
+          <Card className='popular-property-card reduced-width'>
+            <div className='wishlist-button-container2'>
+              <WishListbtn />
+            </div>
             <CardImg
               src={property.areaImage}
               variant='top'
-              className='property-image'
+              className='popular-property-image'
             />
+
             <Card.Body className='d-flex flex-column justify-content-between'>
               <div>
-                <Row className='Room-info'>
+                <Row className='popular-Room-info'>
                   <Col>
-                    <Card.Title className='Room-Title'>
+                    <Card.Title className='popular-Room-Title'>
                       {property.name}
                     </Card.Title>
                   </Col>
                 </Row>
-                <Row className='Room-info2'>
+                <Row className='popular-Room-info2 justify-content-end'>
                   <Col>
-                    <Card.Text className='Room-price'>Starting at</Card.Text>
-                  </Col>
-                </Row>
-                <Row className='Room-info'>
-                  <Col>
-                    <Card.Text className='Room-location'>
-                      {property.location}
-                      <span className='Room-price'>20000/month</span>
+                    <Card.Text
+                      className='popular-Room-price1'
+                      style={{ marginTop: '-15px' }}
+                    >
+                      Starting at
                     </Card.Text>
                   </Col>
                 </Row>
 
-                <Row className='Area-details'>
+                <Row
+                  className='popular-Room-info'
+                  style={{ marginTop: '10px' }}
+                >
+                  <Col className='d-flex justify-content-between'>
+                    <IoLocation style={{ color: '#fa6e42' }} />
+                    <Card.Text className='popular-Room-location'>
+                      {property.location}
+                    </Card.Text>
+                    <Card.Text className='popular-Room-price2'>
+                      20000 / month
+                    </Card.Text>
+                  </Col>
+                </Row>
+
+                <Row className='popular-Area-details'>
                   <Col>
                     <Row className='justify-content-center align-items-center'>
                       <Col className='text-center mx-2'>
-                        <FaRuler className='Room-area-icon' />
+                        <LuRuler className='Room-area-icon' />
                         <p className='Room-area-details'>
                           {property.area} sqft
                         </p>
                       </Col>
                       <Col className='text-center mx-2'>
-                        <FaBed className='Room-area-icon' />
+                        <LuBedDouble className='Room-area-icon' />
                         <p className='Room-area-details'>
-                          {property.totalBeds}
+                          {property.totalBeds} Beds
                         </p>
                       </Col>
                       <Col className='text-center mx-2'>
-                        <FaBath className='Room-area-icon' />
-                        <p className='Room-area-details'>{property.bath}</p>
+                        <LuBath className='Room-area-icon' />
+                        <p className='Room-area-details'>
+                          {property.bath} Baths
+                        </p>
                       </Col>
                       <Col className='text-center mx-2'>
-                        <FaCar className='Room-area-icon' />
+                        <AiOutlineCar
+                          className='Room-area-icon popular-light-icon'
+                          style={{ strokeWidth: '0.1' }}
+                        />
+
                         <p className='Room-area-details'>
                           {property.garage ? 'Yes' : 'No'}
                         </p>
@@ -75,15 +95,29 @@ const PopularPropCard = () => {
                   </Col>
                 </Row>
               </div>
-              <Row className='justify-content-end align-items-center'>
-                <Col className='text-center mx-2'>
-                  <FaShareAlt className='Room-button-icon share-button' />
+              <Row className='last-row py-5 px-4'>
+                <Col className='first-col col-3 '>
+                  <CircleShareButton />
                 </Col>
-                <Col className='text-center mx-2'>
-                  <FaPhoneAlt className='Room-button-icon call-button' />
+                <Col className='first-col col-3 '>
+                  <CircleCallButton />
                 </Col>
-                <Col className='text-center mx-2'>
-                  <Button variant='success' className='Room-card-btn'>
+                <Col className='last-col col-6'>
+                  <Button
+                    variant='success'
+                    className='w-100 btn-button'
+                    style={{
+                      marginTop: '0px',
+                      height: ' 39.67px',
+                      padding: '0',
+                      border: '0.441199px solid #FA6E42',
+                      borderRadius: '15px',
+                      color: '#FA6E42',
+                      background: '#FFFFFF',
+                      width: '139px',
+                      fontWeight: '700',
+                    }}
+                  >
                     Book
                   </Button>
                 </Col>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import { Button, Row } from 'react-bootstrap';
 import Banner from './components/Banner';
 import NavBar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
@@ -9,6 +9,7 @@ import RecommendedPropCard from '../cards/RecomendedPropCard';
 import img from '../../assets/image/img7.jpg';
 import PopularPropCard from '../cards/PopularPropCard';
 import './home.css';
+import TopLocalityCard from '../cards/TopLoalityCard';
 
 const Home = () => {
   return (
@@ -27,8 +28,10 @@ const Home = () => {
       </div>
 
       <div className='homeSection2'>
-        <h2 className='homeSectionHeading'>Recommended Properties</h2>
-        <RecommendedPropCard />
+        <Row className='px-5 ' style={{ marginLeft: '70px' }}>
+          <h2 className='homeSectionHeading'>Recommended Properties</h2>
+          <RecommendedPropCard />
+        </Row>
       </div>
 
       <div className='homeSection3'>
@@ -43,8 +46,10 @@ const Home = () => {
       </div>
 
       <div className='homeSection4'>
-        <h2 className='homeSectionHeading'>Properties in Top Localities</h2>
-        <PropertyCard />
+        <Row className='px-5 ' style={{ marginLeft: '70px' }}>
+          <h2 className='homeSection1Heading'>Properties in Top Localities</h2>
+          <TopLocalityCard />
+        </Row>
       </div>
 
       <div className='homeSection5'>
@@ -58,8 +63,8 @@ const Home = () => {
           <Button
             className='prop-btn'
             style={{
-              width: '7%',
-              height: '35px',
+              width: '8%',
+              height: '44px',
               marginTop: '10px',
               marginLeft: '0',
             }}
@@ -68,25 +73,25 @@ const Home = () => {
           </Button>
           <Button
             className='prop-btn'
-            style={{ width: '7%', height: '35px', marginTop: '10px' }}
+            style={{ width: '8%', height: '44px', marginTop: '10px' }}
           >
             PG
           </Button>
           <Button
             className='prop-btn'
-            style={{ width: '7%', height: '35px', marginTop: '10px' }}
+            style={{ width: '8%', height: '44px', marginTop: '10px' }}
           >
             RK
           </Button>
           <Button
             className='prop-btn'
-            style={{ width: '7%', height: '35px', marginTop: '10px' }}
+            style={{ width: '8%', height: '44px', marginTop: '10px' }}
           >
             1BHK
           </Button>
           <Button
             className='prop-btn'
-            style={{ width: '7%', height: '35px', marginTop: '10px' }}
+            style={{ width: '8%', height: '44px', marginTop: '10px' }}
           >
             2BHK
           </Button>

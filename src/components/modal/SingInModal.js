@@ -1,14 +1,22 @@
 import React, { useState } from 'react';
-import { Modal, Button, Row, Col } from 'react-bootstrap';
-import signupimg from '../../assets/image/signupimg.png';
+import { Button, Row, Col } from 'react-bootstrap';
 import LoginWithIds from './LoginWithIds';
-import OtpModal from '../modal/OtpModal';
+import OtpModal from './OtpModal';
+import { Modal, Box } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
+import CustomMuiBtn from '../btn/CustomMuiBtn';
+import ModalImages from './modalimages/ModalImages';
 
 const SignInModal = ({ handleClose }) => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [showOTPModal, setShowOTPModal] = useState(false);
   const [otp, setOTP] = useState('');
   const [error, setError] = useState('');
+  const [open, setOpen] = useState(true); // Added 'open' variable
+
+  const handleSigninClose = () => {
+    handleClose();
+  };
 
   const handleSignIn = () => {
     // check if the phone number is valid
@@ -23,9 +31,6 @@ const SignInModal = ({ handleClose }) => {
 
   // Phone number validation code
   const phoneNumberIsValid = (number) => {
-    // Implement your validation logic here
-    // Return true if the number is valid, false otherwise
-    // You can use regular expressions or any other validation method
     return /^\d{10}$/.test(number); // Example: Validate if the number is exactly 10 digits
   };
 
@@ -33,28 +38,49 @@ const SignInModal = ({ handleClose }) => {
     console.log('Verifying OTP:', otp);
     // Perform the necessary verification logic
     setShowOTPModal(false);
-    handleClose();
   };
 
   const handleOTPModalClose = () => {
     setShowOTPModal(false);
   };
 
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 862,
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    p: 4,
+    height: 520,
+    borderRadius: 6,
+    overflow: 'hidden',
+  };
   return (
     <Modal
-      show={true}
-      onHide={handleClose}
-      centered
-      style={{ marginTop: '3%' }}
+      open={open}
+      onClose={handleClose}
+      aria-labelledby='modal-modal-title'
+      aria-describedby='modal-modal-description'
     >
-      <Modal.Header closeButton></Modal.Header>
-      <div className='signUpModalBody' style={{ height: '500px' }}>
-        <Row>
-          <Col className='col-6'>
-            <img src={signupimg} alt='Image' className='img-fluid' />
+      <Box sx={style}>
+        <CustomMuiBtn onClick={handleClose}>
+          <CloseIcon style={{ fontSize: '15px' }} />
+        </CustomMuiBtn>
+
+        <Row className='mt-4'>
+          <Col className='Col-6 bshadow'>
+            <div className='bshadow' style={{}}>
+              {' '}
+              <ModalImages />
+            </div>
           </Col>
           <Col className='col-6 signUpSec2 d-flex justify-content-center align-items-center'>
-            <div className='singup-modal-sec2' style={{ width: '400px' }}>
+            <div
+              className='singup-modal-sec2'
+              style={{ width: '400px', marginTop: '-70px' }}
+            >
               <div className='singup-modal-sec21'>
                 Welcome Back!
                 <div className='singup-modal-sec22'>
@@ -62,7 +88,6 @@ const SignInModal = ({ handleClose }) => {
                   nunc lacus dolor ultricies
                 </div>
               </div>
-
               <div style={{ marginTop: '10%' }}>
                 <input
                   type='text'
@@ -73,7 +98,8 @@ const SignInModal = ({ handleClose }) => {
                   onChange={(e) => setPhoneNumber(e.target.value)}
                 />
               </div>
-
+              {error && <div style={{ color: 'red' }}>{error}</div>}{' '}
+              {/* Display error message if there's an error */}
               <div style={{ marginTop: '1rem' }}>
                 <Button
                   className='singup-modal-sec23'
@@ -83,26 +109,25 @@ const SignInModal = ({ handleClose }) => {
                   Sign In
                 </Button>
               </div>
-
               <div className='signModalBoder' style={{}}>
                 <div className='signModalLoginWith'>Or Login With</div>
               </div>
-
-              <div style={{ marginLeft: '10%' }}>
+              <div style={{ marginLeft: '10%', marginTop: '-10px' }}>
                 <LoginWithIds />
               </div>
             </div>
           </Col>
         </Row>
-      </div>
-      {showOTPModal && (
-        <OtpModal
-          handleClose={handleOTPModalClose}
-          handleVerifyOTP={handleVerifyOTP}
-          otp={otp}
-          setOTP={setOTP}
-        />
-      )}
+
+        {showOTPModal && (
+          <OtpModal
+            handleClose={handleSigninClose}
+            otphandleClose={handleOTPModalClose}
+            handleVerifyOTP={handleVerifyOTP}
+            otp={otp}
+          />
+        )}
+      </Box>
     </Modal>
   );
 };
