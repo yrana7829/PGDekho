@@ -9,6 +9,7 @@ import PropertyDetail from './components/propertyDetailedPage/PropertyDetail';
 import UserProfile from './components/userProfile/UserProfile';
 import PersnolDetail from './components/userProfile/PersnolDetail/PersnolDetail';
 import RatingModal from './components/userProfile/RatingModal/RatingModal';
+import DetailFormModal from './components/modal/DetailFormModal';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/profile' element={<UserProfile />} />
         <Route path='/persnolDetail' element={<PersnolDetail />} />
         <Route path='/ratingModal' element={<RatingModal />} />
+        <Route path='/postproperties' element={<DetailFormModal />} />
       </Routes>
     </Router>
   );

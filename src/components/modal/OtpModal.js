@@ -1,25 +1,56 @@
-import React from 'react';
-import { Modal, Button, Row, Col } from 'react-bootstrap';
-import signupimg from '../../assets/image/signupimg.png';
+import React, { useState } from 'react';
+import { Button, Row, Col } from 'react-bootstrap';
+import { Modal, Box } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
+import ModalImages from './modalimages/ModalImages';
+import CustomMuiBtn from '../btn/CustomMuiBtn';
 
-const OtpModal = ({ handleClose, handleVerifyOTP, otp, setOTP }) => {
+const OtpModal = ({
+  otphandleClose,
+  handleVerifyOTP,
+  otp,
+  setOTP,
+  handleClose,
+}) => {
+  const [open, setOpen] = useState(true);
+
   const handleOTPVerification = () => {
     console.log('Verifying OTP:', otp);
     handleVerifyOTP();
+    handleClose();
   };
 
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 862,
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    p: 4,
+    height: 520,
+    borderRadius: 6,
+    overflow: 'hidden',
+  };
   return (
     <Modal
-      show={true}
-      onHide={handleClose}
-      centered
-      style={{ marginTop: '3%' }}
+      open={open}
+      onClose={otphandleClose}
+      aria-labelledby='modal-modal-title'
+      aria-describedby='modal-modal-description'
     >
-      <Modal.Header closeButton></Modal.Header>
-      <div className='signUpModalBody' style={{ height: '500px' }}>
-        <Row>
-          <Col className='col-6'>
-            <img src={signupimg} alt='Image' className='img-fluid' />
+      <Box sx={style}>
+        <CustomMuiBtn onClick={otphandleClose}>
+          <CloseIcon style={{ fontSize: '15px' }} />
+        </CustomMuiBtn>
+
+        <Row className='mt-4'>
+          <Col className='Col-6 bshadow'>
+            <div className='bshadow' style={{}}>
+              {' '}
+              <ModalImages />
+            </div>
           </Col>
           <Col className='col-6 signUpSec2 d-flex justify-content-center align-items-center'>
             <div className='singup-modal-sec2' style={{ width: '400px' }}>
@@ -90,7 +121,7 @@ const OtpModal = ({ handleClose, handleVerifyOTP, otp, setOTP }) => {
             </div>
           </Col>
         </Row>
-      </div>
+      </Box>
     </Modal>
   );
 };

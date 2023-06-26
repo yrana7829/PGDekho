@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
-import signupimg from '../../assets/image/signupimg.png';
+import { Modal, Box } from '@mui/material';
+import { Button, Form, Row, Col } from 'react-bootstrap';
 import { FaTimes } from 'react-icons/fa';
 import PropSearchModal from './PropSearchModal';
+import CustomMuiBtn from '../btn/CustomMuiBtn';
+import ModalImages from './modalimages/ModalImages';
+import CloseIcon from '@mui/icons-material/Close';
 
-const LocationDetailModal = ({ handleClose }) => {
+const LocationDetailModal = ({ handleClose, open }) => {
   const [name, setName] = useState('');
   const [nameError, setNameError] = useState('');
   const [nextModalVisible, setNextModalVisible] = useState(false);
@@ -41,18 +44,38 @@ const LocationDetailModal = ({ handleClose }) => {
     handleClose();
   };
 
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 862,
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    p: 4,
+    height: 500,
+    borderRadius: 6,
+    overflow: 'hidden',
+  };
   return (
     <>
       <Modal
-        show={!nextModalVisible}
-        onHide={handleClose}
-        style={{ marginTop: '5%' }}
+        open={open}
+        onClose={handleClose}
+        aria-labelledby='modal-modal-title'
+        aria-describedby='modal-modal-description'
       >
-        <Modal.Header closeButton></Modal.Header>
-        <Modal.Body>
-          <Row>
-            <Col className='col-6'>
-              <img src={signupimg} alt='Image' className='img-fluid' />
+        <Box sx={style}>
+          <CustomMuiBtn onClick={handleClose}>
+            <CloseIcon style={{ fontSize: '15px' }} />
+          </CustomMuiBtn>
+
+          <Row className='mt-4'>
+            <Col className='Col-6 bshadow'>
+              <div className='bshadow' style={{}}>
+                {' '}
+                <ModalImages />
+              </div>
             </Col>
             <Col className='col-6'>
               <div className='singup-modal-sec21'>
@@ -94,10 +117,37 @@ const LocationDetailModal = ({ handleClose }) => {
                 </div>
                 <div className='localities'>
                   <h6>Popular Localities in New Delhi</h6>
-                  <ul style={{ listStyleType: 'none', padding: 0 }}>
-                    <li>Gurugram Sector -22</li>
-                    <li>Gurugram Sector - 44,</li>
-                    <li>Gurugram Sector - 23, </li>
+                  <ul
+                    style={{
+                      listStyleType: 'none',
+                      padding: 0,
+                      fontFamily: 'Montserrat',
+                    }}
+                  >
+                    <li
+                      style={{
+                        fontFamily: 'Montserrat',
+                        fontWeight: '400',
+                      }}
+                    >
+                      Gurugram Sector -22
+                    </li>
+                    <li
+                      style={{
+                        fontFamily: 'Montserrat',
+                        fontWeight: '400',
+                      }}
+                    >
+                      Gurugram Sector - 44,
+                    </li>
+                    <li
+                      style={{
+                        fontFamily: 'Montserrat',
+                        fontWeight: '400',
+                      }}
+                    >
+                      Gurugram Sector - 23,{' '}
+                    </li>
                   </ul>
                 </div>
                 <div className='text-center' style={{ marginTop: '48%' }}>
@@ -109,13 +159,18 @@ const LocationDetailModal = ({ handleClose }) => {
                       color: '#090909',
                       background: ' none',
                       border: 'none',
+                      marginLeft: '10%',
                     }}
                   >
                     Reset All
                   </Button>{' '}
                   <Button
                     className='btn-button'
-                    style={{ marginLeft: '6%', marginTop: '0' }}
+                    style={{
+                      marginLeft: '15%',
+                      marginTop: '0',
+                      width: '156px',
+                    }}
                     type='submit'
                     onClick={handleSubmit}
                   >
@@ -125,10 +180,13 @@ const LocationDetailModal = ({ handleClose }) => {
               </Form>
             </Col>
           </Row>
-        </Modal.Body>
+        </Box>
       </Modal>
       {nextModalVisible && (
-        <PropSearchModal handleClose={handleNextModalClose} />
+        <PropSearchModal
+          handleClose={handleNextModalClose}
+          open={nextModalVisible}
+        />
       )}
     </>
   );

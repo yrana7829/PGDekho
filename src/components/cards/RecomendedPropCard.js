@@ -3,23 +3,27 @@ import { Card } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import properties from '../../product';
+import './RecommendedPropCard.css';
 
 const RecommendedPropCard = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 6, // Increase the number of items to show
       slidesToSlide: 1,
+      partialVisibilityGutter: 30, // Reduce the space between cards
     },
     tablet: {
       breakpoint: { max: 1024, min: 768 },
-      items: 3,
+      items: 4, // Increase the number of items to show
       slidesToSlide: 1,
+      partialVisibilityGutter: 20, // Reduce the space between cards
     },
     mobile: {
       breakpoint: { max: 768, min: 0 },
-      items: 1,
+      items: 2, // Increase the number of items to show
       slidesToSlide: 1,
+      partialVisibilityGutter: 10, // Reduce the space between cards
     },
   };
 

@@ -24,7 +24,7 @@ const NavBar = () => {
         />
         <Navbar.Collapse id='basic-navbar-nav' className='navbar-links'>
           <Nav className='ml-auto'>
-            <Nav.Link as={Link} to='/' className='nav-buttons'>
+            <Nav.Link as={Link} to='/postproperties' className='nav-buttons'>
               <Button className='post-button'>Post Property</Button>
             </Nav.Link>
             <Nav.Link as={Link} to='/' className='nav-buttons'>

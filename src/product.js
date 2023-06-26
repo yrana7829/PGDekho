@@ -12,12 +12,12 @@ const properties = [
     id: 1,
     areaImage: img1,
     areaImage2: img8,
-    name: 'Property 1',
-    location: 'Location 1',
+    name: 'Sky Dandelions Apartment',
+    location: 'Sector-23, Gurugram',
     roomPrices: {
-      singleRoom: 100,
-      doubleRoom: 150,
-      threeRoom: 200,
+      singleRoom: 19000,
+      doubleRoom: 10000,
+      threeRoom: 7000,
     },
     area: 1500,
     totalBeds: 3,
@@ -29,12 +29,12 @@ const properties = [
     id: 2,
     areaImage: img2,
     areaImage2: img7,
-    name: 'Property 2',
-    location: 'Location 2',
+    name: 'Sky Dandelions Apartment',
+    location: 'Sector-23, Gurugram',
     roomPrices: {
-      singleRoom: 80,
-      doubleRoom: 120,
-      threeRoom: 180,
+      singleRoom: 19000,
+      doubleRoom: 10000,
+      threeRoom: 7000,
     },
     area: 1200,
     totalBeds: 2,
@@ -45,12 +45,12 @@ const properties = [
     id: 3,
     areaImage: img3,
     areaImage2: img6,
-    name: 'Property 3',
-    location: 'Location 3',
+    name: 'Sky Dandelions Apartment',
+    location: 'Sector-23, Gurugram',
     roomPrices: {
-      singleRoom: 90,
-      doubleRoom: 140,
-      threeRoom: 190,
+      singleRoom: 19000,
+      doubleRoom: 10000,
+      threeRoom: 7000,
     },
     area: 1400,
     totalBeds: 3,
@@ -60,8 +60,8 @@ const properties = [
   {
     id: 4,
     areaImage: img4,
-    name: 'Property 4',
-    location: 'Location 4',
+    name: 'Sky Dandelions Apartment',
+    location: 'Sector-23, Gurugram',
     roomPrices: {
       singleRoom: 70,
       doubleRoom: 110,
@@ -75,8 +75,8 @@ const properties = [
   {
     id: 5,
     areaImage: img5,
-    name: 'Property 5',
-    location: 'Location 5',
+    name: 'Sky Dandelions Apartment',
+    location: 'Sector-23, Gurugram',
     roomPrices: {
       singleRoom: 120,
       doubleRoom: 170,
@@ -90,8 +90,8 @@ const properties = [
   {
     id: 6,
     areaImage: img6,
-    name: 'Property 6',
-    location: 'Location 6',
+    name: 'Sky Dandelions Apartment',
+    location: 'Sector-23, Gurugram',
     roomPrices: {
       singleRoom: 95,
       doubleRoom: 145,
@@ -105,8 +105,8 @@ const properties = [
   {
     id: 7,
     areaImage: img7,
-    name: 'Property 7',
-    location: 'Location 7',
+    name: 'Sky Dandelions Apartment',
+    location: 'Sector-23, Gurugram',
     roomPrices: {
       singleRoom: 85,
       doubleRoom: 130,
@@ -120,8 +120,8 @@ const properties = [
   {
     id: 8,
     areaImage: img8,
-    name: 'Property 8',
-    location: 'Location 8',
+    name: 'Sky Dandelions Apartment',
+    location: 'Sector-23, Gurugram',
     roomPrices: {
       singleRoom: 75,
       doubleRoom: 120,
@@ -135,8 +135,8 @@ const properties = [
   {
     id: 8,
     areaImage: img8,
-    name: 'Property 8',
-    location: 'Location 8',
+    name: 'Sky Dandelions Apartment',
+    location: 'Sector-23, Gurugram',
     roomPrices: {
       singleRoom: 75,
       doubleRoom: 120,
