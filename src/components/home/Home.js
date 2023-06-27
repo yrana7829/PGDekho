@@ -15,10 +15,9 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <Banner />
 
-      <div className='homeSection1'>
-        <h2 className='homeSection1Heading'>
+      <div className='homeSection1 px-5 py-1'>
+        <h2 className='homeSection1Heading px-4'>
           Nearby Your Location{' '}
           <Link to='/all-properties' className='seeAllText'>
             See All
@@ -27,15 +26,17 @@ const Home = () => {
         <PropertyCard />
       </div>
 
-      <div className='homeSection2'>
-        <Row className='px-5 ' style={{ marginLeft: '70px' }}>
-          <h2 className='homeSectionHeading'>Recommended Properties</h2>
+      <div className='homeSection2 px-5 py-4'>
+        <Row className='px-4'>
+          <h2 className='homeSection2Heading '>Recommended Properties</h2>
           <RecommendedPropCard />
         </Row>
       </div>
 
-      <div className='homeSection3'>
-        <img src={img} alt='API Image' className='homeSection3Image' />
+      <div className='homeSection3 px-5'>
+        <div className='homeSection3ImageContainer'>
+          <img src={img} alt='API_Image' className='homeSection3Image' />
+        </div>
         <div className='homeSection3PriceTag'>
           <span className='homeSection3PriceTagText'>700k per month</span>
         </div>
@@ -45,21 +46,24 @@ const Home = () => {
         </p>
       </div>
 
-      <div className='homeSection4'>
-        <Row className='px-5 ' style={{ marginLeft: '70px' }}>
-          <h2 className='homeSection1Heading'>Properties in Top Localities</h2>
-          <TopLocalityCard />
-        </Row>
+      <div
+        className='homeSection1 px-5 py-5'
+        style={{ background: 'rgba(248, 248, 254, 1)' }}
+      >
+        <h2 className='homeSection1Heading px-4' style={{ marginTop: '-2%' }}>
+          Properties In Top Localities{' '}
+        </h2>
+        <PropertyCard />
       </div>
 
-      <div className='homeSection5'>
-        <h2 className='homeSection1Heading'>
+      <div className='homeSection5 px-5'>
+        <h2 className='homeSection1Heading px-4' style={{ marginTop: '-2%' }}>
           Popular Properties
           <Link to='/all-properties' className='seeAllText'>
             See All
           </Link>
         </h2>
-        <div className='homeSection5Buttons'>
+        <div className='homeSection5Buttons px-4'>
           <Button
             className='prop-btn'
             style={{
@@ -98,6 +102,7 @@ const Home = () => {
         </div>
         <PopularPropCard />
       </div>
+
       {/* <Map /> */}
       <Footer />
     </>

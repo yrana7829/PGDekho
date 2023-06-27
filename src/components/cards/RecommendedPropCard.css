@@ -1,9 +1,9 @@
 /* Reccomended properties section css */
 
 .property-card-small {
-  width: 250px;
-  height: 300px;
-  margin: 0 auto;
+  width: auto;
+  height: 280px;
+
   border-radius: 15px;
 }
 

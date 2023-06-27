@@ -13,7 +13,7 @@ const TopLocalityCard = () => {
   return (
     <Row>
       {firstThreeProperties.map((property) => (
-        <Col key={property.id} className='mb-4'>
+        <Col key={property.id}>
           <Card className='loc-property-card loc-reduced-width'>
             <Card.Body className='d-flex flex-column justify-content-between card-body'>
               <div className='d-flex'>
