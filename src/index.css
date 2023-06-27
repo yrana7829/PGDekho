@@ -1,4 +1,7 @@
 /* SignUp Modal Styling starts*/
+::-webkit-scrollbar {
+  display: none;
+}
 
 .Room-button-icon {
   display: flex;

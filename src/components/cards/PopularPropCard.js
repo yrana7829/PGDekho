@@ -14,7 +14,7 @@ const PopularPropCard = () => {
   return (
     <Row>
       {firstFourProperties.map((property) => (
-        <Col key={property.id} className='mb-4'>
+        <Col key={property.id}>
           <Card className='popular-property-card reduced-width'>
             <div className='wishlist-button-container2'>
               <WishListbtn />
@@ -25,7 +25,7 @@ const PopularPropCard = () => {
               className='popular-property-image'
             />
 
-            <Card.Body className='d-flex flex-column justify-content-between'>
+            <Card.Body className='d-flex flex-column justify-content-between card-body'>
               <div>
                 <Row className='popular-Room-info'>
                   <Col>
@@ -38,17 +38,14 @@ const PopularPropCard = () => {
                   <Col>
                     <Card.Text
                       className='popular-Room-price1'
-                      style={{ marginTop: '-15px' }}
+                      style={{ marginTop: '-10px' }}
                     >
                       Starting at
                     </Card.Text>
                   </Col>
                 </Row>
 
-                <Row
-                  className='popular-Room-info'
-                  style={{ marginTop: '10px' }}
-                >
+                <Row className='popular-Room-info'>
                   <Col className='d-flex justify-content-between'>
                     <IoLocation style={{ color: '#fa6e42' }} />
                     <Card.Text className='popular-Room-location'>
@@ -60,7 +57,7 @@ const PopularPropCard = () => {
                   </Col>
                 </Row>
 
-                <Row className='popular-Area-details'>
+                <Row className='popular-Area-details py-3'>
                   <Col>
                     <Row className='justify-content-center align-items-center'>
                       <Col className='text-center mx-2'>

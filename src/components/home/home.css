@@ -1,14 +1,11 @@
 /* Home Page CSS Starts */
 
 .homeSection1 {
-  /* position: absolute; */
-  width: 88%;
-  height: 550px;
-  margin-left: 6%;
-  margin-right: 6%;
+  width: auto;
+  height: auto;
   margin-top: 50px;
-  padding: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  overflow-y: hidden;
 }
 .homeSection1Heading {
   display: flex;
@@ -42,24 +39,35 @@
 }
 
 .homeSection2 {
-  width: 100%;
-  margin-top: 20px;
-  padding: 20px;
-  height: 450px;
-  left: 0px;
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: auto;
   background: #f8f8fe;
-  margin-bottom: 100px;
+  overflow-y: hidden;
+}
+.homeSection2Heading {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 70px;
+  /* identical to box height, or 233% */
+
+  letter-spacing: 0.01em;
+
+  color: #222222;
 }
 
 .homeSection3 {
   position: relative;
-  width: 88%;
+  width: auto;
   margin-left: 6%;
   margin-right: 6%;
   margin-top: 50px;
+  margin-bottom: 50px;
   padding: 20px;
-  height: 700px;
-  margin-bottom: 100px;
+  height: 600px;
 }
 
 .homeSection3Image {
@@ -138,61 +146,29 @@
   color: #f8f8fe;
 }
 
-.homeSection4 {
-  width: 100%;
-  height: 600px;
-  /* margin-left: 6%;
-  margin-right: 6%;
-  margin-top: 10px; */
-  margin-bottom: 50px;
-  /* padding: 10px; */
-  background: #f8f8fe;
-}
 .homeSection5 {
-  width: 88%;
-  margin-left: 6%;
-  margin-right: 6%;
-  margin-top: 20px;
-  padding: 20px;
-  height: 450px;
-  margin-bottom: 300px;
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   align-items: center;
 }
 .homeSection5Buttons {
-  height: 75px;
-  width: 100%;
-
-  padding: 0;
+  height: auto;
+  width: auto;
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   /* identical to box height */
-
   letter-spacing: 0.03em;
-
   /* Grey - Dark */
-
   color: #252b5c;
-
   /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
-}
-.homeSectionHeading {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 70px;
-  /* identical to box height, or 233% */
-
-  letter-spacing: 0.01em;
-
-  color: #222222;
 }
 
 /* Home Page CSS Ends */

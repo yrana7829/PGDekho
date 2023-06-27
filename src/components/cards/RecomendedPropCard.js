@@ -29,7 +29,7 @@ const RecommendedPropCard = () => {
 
   const renderPropertyCards = () => {
     return properties.map((property) => (
-      <div key={property.id} className='mb-4'>
+      <div key={property.id} className='px-3 py-2'>
         <Card className='property-card-small'>
           <Card.Img
             src={property.areaImage}
