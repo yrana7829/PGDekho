@@ -25,6 +25,12 @@ const RecommendedPropCard = () => {
       slidesToSlide: 1,
       partialVisibilityGutter: 10, // Reduce the space between cards
     },
+    smallMobile: {
+      breakpoint: { max: 500, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 10,
+    },
   };
 
   const renderPropertyCards = () => {

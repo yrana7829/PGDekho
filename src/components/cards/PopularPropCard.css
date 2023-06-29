@@ -1,56 +1,49 @@
 .popular-property-card {
   height: auto;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background: #ffffff;
   box-shadow: 0px 2.40527px 10.5314px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
 }
 
 .mb-4 {
-  margin-right: 10px; /* Increase the value to adjust the space between cards */
+  margin-right: 0.625rem; /* Increase the value to adjust the space between cards */
 }
 
 .reduced-width {
-  width: 100%; /* Set the width to 100% */
-  max-width: 100%; /* Set the maximum width to 97% */
+  /* Set the maximum width to 97% */
   margin: 0 auto; /* Center the cards horizontally */
 }
 
 .popular-property-card .card-body {
-  padding: 2px 0 2px 0;
-  width: 97%;
-  height: 85%;
+  padding: 0.125rem 0 0.125rem 0;
+  height: 14rem;
 }
 
 .popular-property-image {
-  width: 100%;
-  height: 250px;
+  height: 15.625rem;
   object-fit: cover;
-  border-radius: 8.25316px 8.25316px 8px 8px;
+  border-radius: 0.625rem 0.625rem 0.3125rem 0.3125rem;
 }
 
 .popular-Room-Title {
   font-family: 'Plus Jakarta Sans';
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 19px;
+  font-weight: 900;
+  font-size: 0.975rem;
+  line-height: 1.1875rem;
   letter-spacing: 0.03em;
   color: #000000;
-  margin-top: 15px;
 }
 
 .popular-Room-location {
   font-family: 'Plus Jakarta Sans';
   font-weight: 600;
-  font-size: 13px;
-  line-height: 130%;
+  font-size: 0.85rem;
+
   letter-spacing: 0.01em;
   color: black;
-  margin-left: -80px;
 }
 
 /* Room price details div css starts */
@@ -58,29 +51,32 @@
 .popular-Room-price1 {
   font-family: 'Plus Jakarta Sans';
   font-weight: 600;
-  font-size: 10px;
+  font-size: 0.625rem;
   line-height: 130%;
   letter-spacing: 0.01em;
-  height: 15px;
-  display: flex;
-  justify-content: flex-end; /* Align the content to the right end */
-  color: #fa6e42;
-}
-.popular-Room-price2 {
-  font-family: 'Plus Jakarta Sans';
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 130%;
-  letter-spacing: 0.01em;
-  height: 13px;
+  height: 1.25rem;
   display: flex;
   justify-content: flex-end; /* Align the content to the right end */
   color: #fa6e42;
 }
 
+.popular-Room-price2 {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 600;
+  font-size: 0.8125rem;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  height: 1.125rem;
+  display: flex;
+  justify-content: flex-end; /* Align the content to the right end */
+  color: #fa6e42;
+
+  margin-left: auto;
+}
+
 /* Room area details div css */
 .popular-Area-details {
-  height: 40px;
+  height: 2.5rem;
 }
 
 .popular-Area-details .col-xs-8 {
@@ -101,4 +97,339 @@
   bottom: 52%;
   right: 8%;
   transform: translate(50%, 50%);
+}
+
+/* /////////////////////////// xs */
+@media (min-width: 300px) and (max-width: 511px) {
+  .popular-property-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 2.40527px 10.5314px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 0;
+  }
+
+  .popular-property-card .card-body {
+    padding: 15px 10px 0 10px;
+    width: 100%;
+  }
+  .Room-area-details {
+    font-size: 7px;
+  }
+
+  .popular-Room-Title {
+    width: auto;
+    margin-right: auto;
+    font-size: 15px;
+  }
+
+  .popular-Room-location {
+    padding-right: auto;
+    width: 50%;
+    max-height: 40%;
+    font-size: 11px;
+  }
+  .popular-Room-info {
+    margin-top: -2%;
+  }
+
+  .popular-Room-price1 {
+    padding-right: 1%;
+    width: 100%;
+  }
+
+  .popular-Room-price2 {
+    padding-right: 1%;
+    padding-top: -2%;
+    margin-left: auto;
+    font-size: 11px;
+  }
+  .popular-light-icon {
+    color: #000000; /* Adjust the color to make the icon lighter */
+    opacity: 0.7; /* Adjust the opacity to make the icon lighter */
+  }
+  .popular-Area-details {
+    margin-top: 10px;
+  }
+  .Room-area-icon {
+    opacity: 0.4;
+  }
+
+  .last-row {
+    margin-bottom: 10px;
+  }
+}
+/* Room area details div css */
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 512px) and (max-width: 620px) {
+  .popular-property-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 2.40527px 10.5314px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 0;
+  }
+
+  .popular-property-card .card-body {
+    padding: 15px 10px 0 10px;
+
+    width: 100%;
+  }
+  .Room-area-details {
+    font-size: 7px;
+  }
+
+  .popular-Room-Title {
+    width: auto;
+    margin-right: auto;
+    font-size: 13px;
+  }
+
+  .popular-Room-location {
+    padding-right: 9%;
+    padding-top: -1%;
+    width: 50%;
+    max-height: 40%;
+    font-size: 8px;
+  }
+  .popular-Room-info {
+    margin-top: -2%;
+  }
+
+  .popular-Room-price1 {
+    padding-right: 1%;
+    width: 100%;
+  }
+
+  .popular-Room-price2 {
+    padding-right: 1%;
+    padding-top: -2%;
+    margin-left: auto;
+    font-size: 8px;
+  }
+  .popular-light-icon {
+    color: #000000; /* Adjust the color to make the icon lighter */
+    opacity: 0.7; /* Adjust the opacity to make the icon lighter */
+  }
+
+  .Room-area-icon {
+    opacity: 0.4;
+  }
+
+  .popular-Area-details {
+    margin-top: 0px;
+  }
+  .last-row {
+    margin: 0 0 20px 0;
+
+    width: 100%;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 1199px) {
+  .popular-property-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 2.40527px 10.5314px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 0;
+  }
+
+  .popular-property-card .card-body {
+    padding: 15px 10px 0 10px;
+
+    width: 100%;
+  }
+  .Room-area-details {
+    font-size: 7px;
+  }
+
+  .popular-Room-Title {
+    width: auto;
+    margin-right: auto;
+    font-size: 13px;
+  }
+
+  .popular-Room-location {
+    padding-right: 9%;
+    padding-top: -1%;
+    width: 50%;
+    max-height: 40%;
+    font-size: 10px;
+  }
+  .popular-Room-info {
+    margin-top: -2%;
+  }
+
+  .popular-Room-price1 {
+    padding-right: 1%;
+    width: 100%;
+  }
+
+  .popular-Room-price2 {
+    padding-right: 1%;
+    padding-top: -2%;
+    margin-left: auto;
+    font-size: 10px;
+  }
+  .popular-light-icon {
+    color: #000000; /* Adjust the color to make the icon lighter */
+    opacity: 0.7; /* Adjust the opacity to make the icon lighter */
+  }
+
+  .Room-area-icon {
+    opacity: 0.4;
+  }
+
+  .popular-Area-details {
+    margin-top: 0px;
+  }
+  .last-row {
+    margin: 0 0 20px 0;
+
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Styles for medium devices */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Styles for large devices */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .popular-property-card {
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 2.40527px 10.5314px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 0;
+  }
+
+  .popular-property-card .card-body {
+    padding: 10px 10px 0 10px;
+  }
+  .Room-area-details {
+    font-size: 7px;
+  }
+
+  .popular-Room-Title {
+    padding-top: 2%;
+    font-size: 15px;
+  }
+
+  .popular-Room-location {
+    padding-right: 9%;
+    padding-top: -2%;
+    width: 50%;
+    font-size: 9px;
+  }
+  .popular-Room-info {
+    margin-top: -2%;
+  }
+
+  .popular-Room-price1 {
+    padding-right: 1%;
+    width: 100%;
+  }
+
+  .popular-Room-price2 {
+    padding-top: -2%;
+    margin-left: auto;
+    font-size: 9px;
+  }
+  .popular-light-icon {
+    color: #000000; /* Adjust the color to make the icon lighter */
+    opacity: 0.7; /* Adjust the opacity to make the icon lighter */
+  }
+  .popular-Area-details {
+    margin-top: 0;
+  }
+  .Room-area-icon {
+    opacity: 0.4;
+  }
+}
+
+/* Extra extra large devices (xxl screens, 1440px and up) */
+@media (min-width: 1440px) {
+  .popular-property-card {
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 2.40527px 10.5314px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+  }
+
+  .popular-property-card .card-body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    justify-content: flex-start;
+  }
+  .Room-area-details {
+    font-size: 7px;
+  }
+
+  .popular-Room-Title {
+    display: flex;
+    width: auto;
+    justify-self: start;
+    justify-content: start;
+    padding-top: 2%;
+    margin-right: auto;
+  }
+
+  .popular-Room-location {
+    padding-right: 20%;
+    width: 100%;
+    padding-bottom: 12px;
+    width: fit-content;
+    margin-right: auto;
+  }
+  .popular-Room-info {
+    padding-left: 2%;
+    width: auto;
+  }
+
+  .popular-Room-price1 {
+    padding-right: 2%;
+    width: 100%;
+  }
+
+  .popular-Room-price2 {
+    padding-right: 2%;
+    margin-left: auto;
+  }
+  .popular-light-icon {
+    color: #000000; /* Adjust the color to make the icon lighter */
+    opacity: 0.7; /* Adjust the opacity to make the icon lighter */
+  }
+  .popular-Area-details {
+    margin-top: -1%;
+    margin: 0% 2%;
+  }
+  .Room-area-icon {
+    opacity: 0.4;
+  }
+  .last-row {
+    margin: 0px 4%;
+  }
 }

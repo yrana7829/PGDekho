@@ -1,52 +1,59 @@
 import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
 const Footer = () => {
   return (
     <footer
       style={{
         width: '100%',
-        height: '90.89px',
-        left: '0px',
-        // top: "2100px",
+        minHeight: '90.89px',
         background: '#FA6E42',
       }}
     >
-      <div
-        style={{
-          width: '754.95px',
-          height: '38px',
-          left: '140.7px',
-          top: '20px',
-
-          fontFamily: 'Bahnschrift',
-          fontStyle: 'normal',
-          fontWeight: 300,
-          fontSize: '18px',
-          lineHeight: '38px',
-          color: '#FFFFFF',
-        }}
-      >
-        © 2023 PG Dekho | All Rights Reserved | Design & Develop by BizzeOnline
-      </div>
-      <div
-        style={{
-          width: '310.8px',
-          height: '38px',
-          left: '1058.4px',
-          top: '20px',
-
-          fontFamily: 'Bahnschrift',
-          fontStyle: 'normal',
-          fontWeight: 300,
-          fontSize: '18px',
-          lineHeight: '38px',
-          color: '#FFFFFF',
-          marginLeft: '10px',
-        }}
-      >
-        Terms & Conditions{' '}
-        <span style={{ marginLeft: '30px' }}>Privacy Policy</span>
-      </div>
+      <Row className='mx-0'>
+        <Col
+          sm={8}
+          className='px-5 py-4 text-lg-right text-center text-lg-right '
+        >
+          <div
+            style={{
+              fontFamily: 'Bahnschrift',
+              fontStyle: 'normal',
+              fontWeight: 300,
+              fontSize: '18px',
+              lineHeight: '38px',
+              color: '#FFFFFF',
+            }}
+          >
+            © 2023 PG Dekho | All Rights Reserved | Design & Develop by
+            BizzeOnline
+          </div>
+        </Col>
+        <Col
+          sm={4}
+          className='py-4 d-flex align-items-center justify-content-center justify-content-lg-end'
+        >
+          <div
+            style={{
+              fontFamily: 'Bahnschrift',
+              fontStyle: 'normal',
+              fontWeight: 300,
+              fontSize: '18px',
+              lineHeight: '38px',
+              color: '#FFFFFF',
+              marginLeft: '10px',
+              textAlign: 'right',
+            }}
+          >
+            <div className='text-center text-md-right'>
+              <span className='d-inline-block mb-2 mb-sm-0'>
+                Terms & Conditions
+              </span>{' '}
+              <span className='d-inline-block px-4'>Privacy Policy</span>
+            </div>
+          </div>
+        </Col>
+      </Row>
     </footer>
   );
 };

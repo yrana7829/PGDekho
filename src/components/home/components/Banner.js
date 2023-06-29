@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Form, Button } from 'react-bootstrap';
 import { IoLocation } from 'react-icons/io5';
@@ -9,13 +9,32 @@ import './Banner.css';
 import bannerMap from '../../../assets/image/bannerMap.png';
 
 const Banner = () => {
-  const [selectedBudget, setSelectedBudget] = useState('');
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Initial check on component mount
+    handleResize();
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>
       {/* Banner section */}
+
       <Row className='banner' style={{}}>
         {/* Left side of the banner */}
+
         <Col
           md={6}
           className='grid-item item1'
@@ -106,15 +125,6 @@ const Banner = () => {
                 <span> Budgets </span>
 
                 <span className='right-content1' style={{ color: '#fa6e42' }}>
-                  {/* <select
-              value={selectedBudget}
-              onChange={(e) => setSelectedBudget(e.target.value)}
-            >
-              <option value=''></option>
-              <option value='0-2k'>0-2k</option>
-              <option value='2k-5k'>2k-5k</option>
-              <option value='5k-10k'>5k-10k</option>
-            </select> */}
                   <IoIosArrowDown />
                 </span>
                 <span className='right-content2'>
