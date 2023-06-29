@@ -35,7 +35,8 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      {!isSmallScreen && <Banner />}
+      {/* 
+      {isSmallScreen ? <BannerMb /> : <Banner />} */}
 
       <div className='homeSection1 px-5 py-1'>
         <h2 className='homeSection1Heading px-4'>

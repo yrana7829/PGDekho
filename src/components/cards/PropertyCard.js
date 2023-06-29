@@ -28,7 +28,7 @@ const PropertyCard = () => {
     };
   }, []);
 
-  const isSmallScreen = windowWidth <= 992;
+  const isSmallScreen = windowWidth <= 1000;
   const isExtraSmallScreen = windowWidth <= 770;
   const isVerySmallScreen = windowWidth <= 500;
   const cardCount = isSmallScreen ? (isExtraSmallScreen ? 1 : 2) : 3;
@@ -132,8 +132,8 @@ const PropertyCard = () => {
                             {property.totalBeds} Beds
                           </p>
                         </Col>
-                        <Col className='text-center '>
-                          <LuBath className='Room-area-icon' />
+                        <Col className='text-center px-2 mx-2'>
+                          <LuBath className='Room-area-icon mx-2' />
                           <p className='Room-area-details'>
                             {property.bath} Baths
                           </p>
@@ -157,7 +157,7 @@ const PropertyCard = () => {
                     <Col className='d-flex justify-content-end col-3'>
                       <Button
                         variant='success'
-                        className='w-70 btn-button'
+                        className='w-60 btn-button'
                         style={{
                           marginTop: '10px',
                           height: '30px',
