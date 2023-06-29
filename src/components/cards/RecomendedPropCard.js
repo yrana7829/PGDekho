@@ -25,6 +25,12 @@ const RecommendedPropCard = () => {
       slidesToSlide: 1,
       partialVisibilityGutter: 10, // Reduce the space between cards
     },
+    smallMobile: {
+      breakpoint: { max: 500, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 10,
+    },
   };
 
   const renderPropertyCards = () => {
@@ -50,8 +56,8 @@ const RecommendedPropCard = () => {
   return (
     <Carousel
       responsive={responsive}
-      draggable={true} // Enable sliding
-      swipeable={true} // Enable sliding
+      draggable={true}
+      swipeable={true}
       ssr={true}
       infinite={true}
       autoPlay={false}
@@ -60,7 +66,7 @@ const RecommendedPropCard = () => {
       customTransition='transform 300ms ease-in-out'
       transitionDuration={500}
       containerClass='carousel-container'
-      removeArrowOnDeviceType={['tablet', 'mobile']}
+      removeArrowOnDeviceType={['desktop', 'tablet', 'mobile', 'smallMobile']} // Remove arrows on all device types
       itemClass='carousel-item-padding-40-px'
     >
       {renderPropertyCards()}

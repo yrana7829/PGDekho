@@ -16,16 +16,14 @@
 }
 
 .reduced-width {
-  width: 100%; /* Set the width to 100% */
-  max-width: 97%; /* Set the maximum width to 97% */
-  margin: 0 auto; /* Center the cards horizontally */
+  width: 97%; /* Reduce the width by 5% */
 }
 
-/* .property-card .card-body {
+.property-card .card-body {
   padding: 2 0 2 0;
   width: 100%;
   height: 90%;
-} */
+}
 
 .property-image {
   width: 95%;
@@ -57,7 +55,7 @@
 .Room-Title {
   font-family: 'Plus Jakarta Sans';
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 19px;
   letter-spacing: 0.03em;
   color: #000000;
@@ -69,30 +67,39 @@
   line-height: 130%;
   letter-spacing: 0.01em;
   color: #7d7f88;
+  font-size: 14px;
+
+  margin-top: -5px;
 }
 
 .title-btn-div {
-  height: 70px;
+  height: 60px;
   display: flex;
   gap: 20px;
 }
+
 /* Room price details div css starts */
 
 .Room-price-div {
   background-color: #e3e3e7;
   box-sizing: border-box;
-  height: 85px;
+  height: 75px;
   margin: 5px auto;
   background: #f5f4f8;
   border: 0.40991px solid #e3e3e7;
   border-radius: 8.1982px;
   display: flex;
+
+  @media (max-width: 500px) {
+    height: 50px;
+    margin: 0;
+  }
 }
 
 .Room-price-cols:first-child,
 .Room-price-cols:nth-child(2) {
   border-right: 0.491892px solid #d6d6d6;
-  margin-left: 25px;
+  /* margin-left: 25px; */
   height: 80%;
   margin-top: auto;
   margin-bottom: auto;
@@ -116,7 +123,7 @@
 .Room-occupancy-title {
   font-family: 'Plus Jakarta Sans';
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 130%;
   text-align: center;
   letter-spacing: 0.02em;
@@ -126,7 +133,7 @@
 .Room-occupancy-price {
   font-family: 'Plus Jakarta Sans';
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 100%;
   letter-spacing: 0.013em;
   color: #1a1e25;
@@ -142,15 +149,17 @@
   padding: 0;
 }
 .Room-area-icon {
-  width: 25px;
+  width: 20px;
   height: 90%;
   margin-bottom: 5px;
+  margin-right: 5px;
   color: #000000;
   stroke-width: 1;
 }
 .light-icon {
   color: #000000; /* Adjust the color to make the icon lighter */
-  opacity: 0.7; /* Adjust the opacity to make the icon lighter */
+  opacity: 0.5; /* Adjust the opacity to make the icon lighter */
+  scale: 1.1;
 }
 
 .Room-area-details {
@@ -171,4 +180,221 @@
   top: 0.5%;
   left: 0.5%;
   transform: translate(50%, 50%);
+}
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+  .property-card {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0px 2.40527px 10.5314px rgba(0, 0, 0, 0.07);
+    border-radius: 5.41185px;
+  }
+  .mb-4 {
+    margin-right: 0; /* Increase the value to adjust the space between cards */
+  }
+
+  .property-card .card-body {
+    padding: 2 0 2 0;
+    width: 100%;
+    height: 90%;
+  }
+
+  .property-image {
+    width: 100%;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Room-Title {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+
+  .Room-location {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #7d7f88;
+  }
+
+  .title-btn-div {
+    height: 70px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .Room-occupancy-title {
+    font-size: 12px !important;
+  }
+
+  .Room-occupancy-price {
+    font-size: 12px !important;
+  }
+
+  .Area-details {
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .Room-area-icon {
+    width: 15px;
+    height: 90%;
+    margin-bottom: 5px;
+    color: #000000;
+    stroke-width: 1;
+  }
+  .light-icon {
+    color: #000000; /* Adjust the color to make the icon lighter */
+    opacity: 0.5; /* Adjust the opacity to make the icon lighter */
+    scale: 1.1;
+  }
+
+  .Room-area-details {
+    font-family: 'Bahnschrift';
+    font-weight: 200;
+    font-size: 8px;
+    color: #282431;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 400px) {
+  .property-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8.25316px 8.25316px 8px 8px;
+  }
+
+  .Room-occupancy-title {
+    font-size: 10px !important;
+  }
+
+  .Room-occupancy-price {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .property-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8.25316px 8.25316px 8px 8px;
+  }
+
+  .Room-occupancy-title {
+    font-size: 8px !important;
+  }
+
+  .Room-occupancy-price {
+    font-size: 8px !important;
+  }
+}
+
+/* Carousel cards styling :- For screen size < 500*/
+.title-div-mb {
+  height: 50px;
+  margin: 0px;
+  margin-top: 10px;
+  /* padding-right: 10px; */
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.title-div-inner-mb {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.Room-Title-mb {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  font-size: 12px;
+  /* line-height: 19px;
+  letter-spacing: 0.03em; */
+  color: #000000;
+  margin-right: auto; /* Pushes the title to the left */
+}
+.Room-location-mb {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #7d7f88;
+  font-size: 10px;
+  margin-right: auto; /* Pushes the title to the left */
+}
+.title-btn-div-mb {
+  height: 50px;
+  display: flex;
+  gap: 15px;
+}
+
+.Room-price-div-mb {
+  background-color: #e3e3e7;
+  box-sizing: border-box;
+  height: 50px;
+  width: auto;
+  margin-top: 0;
+  background: #f5f4f8;
+  border: 0.40991px solid #e3e3e7;
+  border-radius: 8.1982px;
+  display: flex;
+}
+.Room-price-cols-mb:first-child,
+.Room-price-cols-mb:nth-child(2) {
+  border-right: 0.491892px solid #d6d6d6;
+  margin-left: 25px;
+  height: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.Room-price-cols-mb:nth-child(3) {
+  margin-left: 5px;
+  height: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.Room-price-row-mb {
+  margin: 0; /* Remove default margin */
+  flex: 1; /* Expand to fill the available space */
+}
+
+.Room-area-details-mb {
+  font-family: 'Bahnschrift';
+  font-weight: 200;
+  font-size: 7px;
+  color: #282431;
+  opacity: 0.5;
+}
+.property-card {
+  height: 480px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 2.40527px 2.40527px 2.40527px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
 }

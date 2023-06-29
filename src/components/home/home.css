@@ -3,10 +3,11 @@
 .homeSection1 {
   width: auto;
   height: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3.125rem; /* 50px */
+  margin-bottom: 3.125rem; /* 50px */
   overflow-y: hidden;
 }
+
 .homeSection1Heading {
   display: flex;
   justify-content: space-between;
@@ -14,48 +15,42 @@
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 70px;
+  font-size: 1.5rem; /* 24px */
+  line-height: 2.1875rem; /* 35px */
   letter-spacing: 0.01em;
   color: #222222;
 }
 
 .seeAllText {
   cursor: pointer;
-  width: 78px;
-  height: 70px;
-
+  width: 4.875rem; /* 78px */
+  height: 4.375rem; /* 70px */
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 70px;
-  /* identical to box height, or 350% */
-
+  font-size: 1.25rem; /* 20px */
+  line-height: 4.375rem; /* 70px */
   text-align: right;
   letter-spacing: 0.01em;
-
   color: #fa6e42;
 }
 
 .homeSection2 {
   width: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3.125rem; /* 50px */
+  margin-bottom: 3.125rem; /* 50px */
   height: auto;
   background: #f8f8fe;
   overflow-y: hidden;
 }
+
 .homeSection2Heading {
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 70px;
-  /* identical to box height, or 233% */
-
+  font-size: 1.875rem; /* 30px */
+  line-height: 4.375rem; /* 70px */
   letter-spacing: 0.01em;
-
   color: #222222;
 }
 
@@ -64,10 +59,10 @@
   width: auto;
   margin-left: 6%;
   margin-right: 6%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 20px;
-  height: 600px;
+  margin-top: 3.125rem; /* 50px */
+  margin-bottom: 3.125rem; /* 50px */
+  padding: 1.25rem; /* 20px */
+  height: 37.5rem; /* 600px */
 }
 
 .homeSection3Image {
@@ -83,92 +78,156 @@
       rgba(0, 0, 0, 0.3) 77.15%
     ),
     #ffffff;
-  border-radius: 45px;
+  border-radius: 2.8125rem; /* 45px */
 }
 
 .homeSection3Text {
   position: absolute;
-  bottom: 50px;
-  left: 50px;
-  width: 207px;
-  height: 38px;
-
+  bottom: 3.125rem; /* 50px */
+  left: 3.125rem; /* 50px */
+  width: 12.9375rem; /* 207px */
+  height: 2.375rem; /* 38px */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px */
   line-height: 125%;
-  /* identical to box height, or 38px */
-
   color: #ffffff;
 }
+
 .homeSection3Text2 {
   position: absolute;
-  left: 50px;
-  bottom: 3px;
-  width: 207px;
-  height: 38px;
-
+  left: 3.125rem; /* 50px */
+  bottom: 0.1875rem; /* 3px */
+  width: 12.9375rem; /* 207px */
+  height: 2.375rem; /* 38px */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px */
   line-height: 125%;
-  /* identical to box height, or 38px */
-
   color: #ffffff;
 }
+
 .homeSection3Text2 .star {
   color: yellow;
 }
+
 .homeSection3PriceTag {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   background-color: #ffcc00;
   color: #000;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 0.3125rem 0.625rem; /* 5px 10px */
+  border-radius: 0.3125rem; /* 5px */
   font-weight: bold;
-
-  width: 202.64px;
-  height: 53.05px;
-
+  width: 12.664rem; /* 202.64px */
+  height: 3.308125rem; /* 53.05px */
   background: #fa6e42;
-  border-radius: 0 34px 0 10px;
-  padding: 10px;
+  border-radius: 0 2.125rem 0 0.625rem; /* 0 34px 0 10px */
+  padding: 0.625rem; /* 10px */
 }
+
 .homeSection3PriceTagText {
-  width: 1554px;
-  height: 471px;
-  left: 0px;
-  top: 1519px;
+  width: 97.125rem; /* 1554px */
+  height: 29.4375rem; /* 471px */
+  left: 0;
+  top: 94.9375rem; /* 1519px */
   color: #f8f8fe;
 }
 
 .homeSection5 {
   width: auto;
   height: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3.125rem; /* 50px */
+  margin-bottom: 3.125rem; /* 50px */
   align-items: center;
 }
+
 .homeSection5Buttons {
   height: auto;
   width: auto;
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  /* identical to box height */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.125rem; /* 18px */
   letter-spacing: 0.03em;
-  /* Grey - Dark */
   color: #252b5c;
-  /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
 /* Home Page CSS Ends */
+/* Media query for screen size below 768px */
+@media (max-width: 767px) {
+  .homeSection1 {
+    padding: 0;
+    margin: 1rem 0 0 0; /* 50px */
+  }
+
+  .homeSection2 {
+    padding: 1px 5px 1px -10px;
+    margin: 1rem 0 0 0; /* 50px */
+  }
+
+  .homeSection3 {
+    padding: 1px 5px;
+    margin: 1rem 0 0 0; /* 50px */
+  }
+
+  .homeSection4 {
+    padding: 10px 5px 5px 5px;
+    margin: 1rem 0 0 0; /* 50px */
+  }
+
+  .homeSection1Heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; /* 14px */
+    line-height: 1.5625rem; /* 25px */
+  }
+
+  .homeSection2Heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; /* 14px */
+    line-height: 1.5625rem; /* 25px */
+  }
+
+  .homeSection5 {
+    padding: 1px 5px;
+    margin-top: 2rem; /* 50px */
+  }
+
+  .homeSection5Buttons {
+    height: auto;
+    width: auto;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.125rem; /* 18px */
+    letter-spacing: 0.03em;
+    color: #252b5c;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+}
+
+.dropdown-btn {
+  background-color: #fa6e42;
+  color: #f8f8fe;
+  border-radius: 5px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+}
+.dropdown-items {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+}

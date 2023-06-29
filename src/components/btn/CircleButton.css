@@ -20,3 +20,18 @@
 .circle-button:focus {
   outline: none;
 }
+
+.circle-button-mb {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #f1f1f1;
+  color: #323539;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border: none;
+}
