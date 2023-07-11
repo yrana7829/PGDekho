@@ -53,7 +53,7 @@
 }
 
 .Room-Title {
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-weight: 700;
   font-size: 15px;
   line-height: 19px;
@@ -62,7 +62,7 @@
 }
 
 .Room-location {
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.01em;
@@ -121,7 +121,7 @@
 }
 
 .Room-occupancy-title {
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-weight: 400;
   font-size: 13px;
   line-height: 130%;
@@ -131,7 +131,7 @@
 }
 
 .Room-occupancy-price {
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-weight: 400;
   font-size: 15px;
   line-height: 100%;
@@ -149,12 +149,16 @@
   padding: 0;
 }
 .Room-area-icon {
-  width: 20px;
+  width: 25px;
+
   height: 90%;
   margin-bottom: 5px;
   margin-right: 5px;
   color: #000000;
   stroke-width: 1;
+}
+.Area-details-1 {
+  padding-right: 13%;
 }
 .light-icon {
   color: #000000; /* Adjust the color to make the icon lighter */
@@ -163,7 +167,7 @@
 }
 
 .Room-area-details {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift";
   font-weight: 350;
   font-size: 12.1px;
   color: #282431;
@@ -213,7 +217,7 @@
   }
 
   .Room-Title {
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-weight: 700;
     font-size: 10px;
     line-height: 19px;
@@ -222,7 +226,7 @@
   }
 
   .Room-location {
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
     font-weight: 400;
     line-height: 130%;
     letter-spacing: 0.01em;
@@ -265,7 +269,7 @@
   }
 
   .Room-area-details {
-    font-family: 'Bahnschrift';
+    font-family: "Bahnschrift";
     font-weight: 200;
     font-size: 8px;
     color: #282431;
@@ -324,7 +328,7 @@
   flex: 1;
 }
 .Room-Title-mb {
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-weight: 700;
   font-size: 12px;
   /* line-height: 19px;
@@ -333,7 +337,7 @@
   margin-right: auto; /* Pushes the title to the left */
 }
 .Room-location-mb {
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.01em;
@@ -379,7 +383,7 @@
 }
 
 .Room-area-details-mb {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift";
   font-weight: 200;
   font-size: 7px;
   color: #282431;
@@ -397,4 +401,49 @@
   background: #ffffff;
   box-shadow: 0px 2.40527px 2.40527px 2.40527px rgba(0, 0, 0, 0.07);
   border-radius: 15px;
+}
+@media (max-width: 360px) {
+  .Room-Title-mb {
+    font-size: 10px;
+  }
+  .Room-price-div-mb {
+    margin-top: 3% !important;
+  }
+
+  .Room-area-icon {
+    margin: 0px 0px !important;
+    width: 24px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1155px) {
+  .Room-location {
+    color: #000000;
+    font-size: 12px;
+    margin-top: -10%;
+    border: 1px solid rgb(94, 202, 40);
+  }
+
+  .Room-price-div {
+    height: 45px;
+    font-size: 5px;
+  }
+
+  .Room-area-icon {
+    border: 1px solid red;
+
+    font-size: 5px !important;
+  }
+
+  .Area-details-1 {
+    border: 1px solid red;
+  }
+  .Area-details-2 {
+    font-size: 2px !important;
+    border: 1px solid red;
+  }
+  .Area-details {
+    display: flex !important;
+    justify-content: space-around !important;
+  }
 }

@@ -50,7 +50,8 @@ const ModalImages = () => {
     },
   ];
   return (
-    <div>
+    <div style={{ position: 'relative' }}>
+      <div style={{ position: 'absolute', bottom: 90, height: '20rem', width: '100%',  zIndex: '1', backgroundImage: 'linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0))' }}></div>
       <ImageList variant='masonry' cols={3} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>

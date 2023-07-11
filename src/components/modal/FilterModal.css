@@ -1,0 +1,14 @@
+.filter-sm-btn {
+  width: 28%;
+  height: 35px;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+.filter-modal {
+  border: none !important;
+}
+.filter-pro-btn {
+  padding: 0.6rem 1rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+}

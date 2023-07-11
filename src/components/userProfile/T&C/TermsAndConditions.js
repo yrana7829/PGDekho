@@ -3,7 +3,7 @@ import React from 'react';
 const TermsAndConditions = () => {
   return (
     <>
-      <div style={{ marginTop: '100px' }}>
+      <div>
         <h2>1. Terms</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer

@@ -1,0 +1,29 @@
+.banner-card-sm {
+  height: 17rem !important;
+  box-shadow: 2rem;
+  width: 11.694rem !important;
+  margin-top: 25.688rem;
+}
+.banner-sm-location {
+  font-size: 0.7rem !important;
+  margin-top: -10px;
+}
+.banner-sm-info {
+}
+.banner-sm-info {
+  font-size: 8px !important;
+
+  margin-top: -10px;
+}
+.Banner-sm-details {
+  margin-top: -0.5rem;
+  width: 100%;
+  padding: 0;
+}
+.icon-col {
+  margin: 0;
+  padding: 0;
+}
+.sm-last-row {
+  margin-top: 0.5rem;
+}

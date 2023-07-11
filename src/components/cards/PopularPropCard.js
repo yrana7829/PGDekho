@@ -89,7 +89,7 @@ const PopularPropCard = () => {
     <Slider {...settings}>
       {firstFourProperties.map((property) => (
         <div key={property.id}>
-          <Card className='popular-property-card reduced-width pb-3'>
+          <Card className='popular-property-card reduced-width pb-1'>
             <div className='wishlist-button-container2'>
               <WishListbtn />
             </div>
@@ -99,7 +99,7 @@ const PopularPropCard = () => {
               className='popular-property-image'
             />
 
-            <Card.Body className='d-flex flex-column justify-content-between card-body'>
+            <Card.Body className='d-flex flex-column justify-content-between  card-body'>
               <div>
                 <Row className='popular-Room-info'>
                   <Col>
@@ -108,8 +108,9 @@ const PopularPropCard = () => {
                     </Card.Title>
                   </Col>
                 </Row>
-                <Row className='justify-content-end'>
-                  <Col className='col-12'>
+                <Row className='popular-Room-info'>
+                  <Col className='d-flex '>
+                    <Card.Text className='popular-Room-location'></Card.Text>
                     <Card.Text className='popular-Room-price1'>
                       Starting at
                     </Card.Text>

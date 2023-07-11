@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Button, Form, Row, Col } from "react-bootstrap";
-import LocationDetailModal from "./LocationDetailModal";
-import { Modal, Box, Button as MuiButton } from "@mui/material";
+import LocationDetailModal from "../LocationDetailModal";
+import { Modal, Box } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import CustomMuiBtn from "../btn/CustomMuiBtn";
-import ModalImages from "./modalimages/ModalImages";
+import CustomMuiBtn from "../../btn/CustomMuiBtn";
+import "./SignUpDetailedsm.css";
 
-import SignUpDetailedsm from "./smallModal/SignUpDetailedsm";
-
-const SignUpDetailedModal = ({ handleClose }) => {
+const SignUpDetailedsm = ({ handleClose }) => {
   const [profession, setProfession] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -24,23 +22,6 @@ const SignUpDetailedModal = ({ handleClose }) => {
 
   const [currentModal, setcurrentModal] = useState(true);
   const [open, setOpen] = useState(true);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768);
-    };
-
-    // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    // Initial check on component mount
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const validateProfession = () => {
     if (profession.trim() === "") {
@@ -125,56 +106,53 @@ const SignUpDetailedModal = ({ handleClose }) => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 900,
+    width: "90%",
     bgcolor: "background.paper",
     boxShadow: 24,
-    height: 550,
+    height: "auto",
     borderRadius: 6,
-    overflow: "hidden",
+
+    maxHeight: "100vh",
   };
 
   return (
     <>
-      {isSmallScreen ? (
-        <SignUpDetailedsm />
-      ) : (
-        currentModal && (
-          <div>
-            <Modal
-              open={open}
-              onClose={handleClose}
-              aria-labelledby="modal-modal-title"
-              aria-describedby="modal-modal-description"
-            >
-              <Box sx={style}>
-                <CustomMuiBtn onClick={handleClose}>
-                  <CloseIcon style={{ fontSize: "15px" }} />
-                </CustomMuiBtn>
-                <Row style={{ marginTop: "3%" }}>
-                  <Col className="Col-6" style={{ marginTop: "20px" }}>
-                    <div
-                      className=""
-                      style={{ height: "500px", marginLeft: "2%" }}
-                    >
-                      <ModalImages />
-                    </div>
-                  </Col>
-                  <Col className="col-6 mt-4">
-                    <div className="singup-modal-sec21">
+      {currentModal && (
+        <div>
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <Box sx={style} className="detail-sm">
+              <CustomMuiBtn onClick={handleClose}>
+                <CloseIcon style={{ fontSize: "15px" }} />
+              </CustomMuiBtn>
+              <Row className="d-flex justify-content-center align-items-center">
+                <div className="detail-sm-col">
+                  <Form
+                    className="detail-sm-form"
+                    onSubmit={handleSubmit}
+                    style={{ margin: "0 auto", marginTop: "12%" }}
+                  >
+                    <div className="singup-modal-sec21 detail-sm-21">
                       Let’s Know You Better
-                      <div className="singup-modal-sec22">
-                        Lorem ipsum dolor sit amet consectetur. Neque
-                        pellentesque nunc lacus dolor ultricies
-                      </div>
                     </div>
-                    <Form
-                      onSubmit={handleSubmit}
-                      style={{ marginTop: "12%", marginLeft: "5%" }}
+                    <div
+                      className="singup-modal-sec22"
+                      style={{
+                        margin: "auto",
+                        fontSize: ".6rem",
+                        width: "80%",
+                      }}
                     >
-                      <Form.Group>
-                        <Form.Label
-                          style={{ marginTop: "2%", marginBottom: "-1%" }}
-                        >
+                      Lorem ipsum dolor sit amet consectetur. Neque pellentesque
+                      nunc lacus dolor ultricies
+                    </div>
+                    <Col className="detail-sm-22 ">
+                      <Form.Group className="">
+                        <Form.Label style={{ marginLeft: "6px" }}>
                           <h6>I am an</h6>
                         </Form.Label>
                         <div>
@@ -183,30 +161,32 @@ const SignUpDetailedModal = ({ handleClose }) => {
                             onClick={() => setProfession("Individual")}
                             active={profession === "Individual"}
                             style={{
-                              marginRight: "10px",
                               background: "#F5F4F8",
                               color: "black",
+                              scale: ".8",
                             }}
                           >
                             Individual
                           </Button>
                           <Button
+                            className="mx-1 "
                             variant="secondary"
                             onClick={() => setProfession("Agent")}
                             active={profession === "Agent"}
-                            style={{
-                              marginLeft: "50px",
-                              background: "#fa6e42",
-                            }}
+                            style={{ background: "#fa6e42", scale: ".8" }}
                           >
                             Agent
                           </Button>
                         </div>
+                        {professionError && (
+                          <div className="error-message">{professionError}</div>
+                        )}
                       </Form.Group>
 
                       <Form.Group>
                         <Form.Label
-                          style={{ marginTop: "2%", marginBottom: "-1%" }}
+                          style={{}}
+                          className="detail-sm-23 px-0 mx-0 "
                         >
                           <h6>Your Name</h6>
                         </Form.Label>
@@ -224,7 +204,8 @@ const SignUpDetailedModal = ({ handleClose }) => {
 
                       <Form.Group>
                         <Form.Label
-                          style={{ marginTop: "2%", marginBottom: "-1%" }}
+                          style={{ marginLeft: "6px" }}
+                          className="detail-sm-23"
                         >
                           <h6>Email</h6>
                         </Form.Label>
@@ -242,7 +223,8 @@ const SignUpDetailedModal = ({ handleClose }) => {
 
                       <Form.Group>
                         <Form.Label
-                          style={{ marginTop: "2%", marginBottom: "-1%" }}
+                          style={{ marginLeft: "-3px" }}
+                          className="detail-sm-23"
                         >
                           <h6>Mobile Number</h6>
                         </Form.Label>
@@ -272,7 +254,10 @@ const SignUpDetailedModal = ({ handleClose }) => {
                         )}
                       </Form.Group>
 
-                      <div className="text-center" style={{ marginTop: "5%" }}>
+                      <div
+                        className="w-100 detail-sm-24 "
+                        style={{ marginTop: "5%" }}
+                      >
                         <Button
                           onClick={handleReset}
                           style={{
@@ -281,7 +266,7 @@ const SignUpDetailedModal = ({ handleClose }) => {
                             color: "#090909",
                             background: "none",
                             border: "none",
-                            marginLeft: "-10%",
+                            scale: ".9",
                           }}
                         >
                           Reset All
@@ -290,16 +275,19 @@ const SignUpDetailedModal = ({ handleClose }) => {
                           variant="primary"
                           onClick={handleSkip}
                           className="btn-button"
-                          style={{ marginLeft: "7%", marginTop: "0" }}
+                          style={{
+                            marginTop: "0",
+                            scale: ".6",
+                          }}
                         >
                           Skip
                         </Button>{" "}
                         <Button
                           className="btn-button"
                           style={{
-                            marginLeft: "7%",
                             marginTop: "0",
                             width: "156px",
+                            scale: ".6",
                           }}
                           type="submit"
                           onClick={locationHandler}
@@ -307,13 +295,13 @@ const SignUpDetailedModal = ({ handleClose }) => {
                           Next
                         </Button>
                       </div>
-                    </Form>
-                  </Col>
-                </Row>
-              </Box>
-            </Modal>
-          </div>
-        )
+                    </Col>
+                  </Form>
+                </div>
+              </Row>
+            </Box>
+          </Modal>
+        </div>
       )}
 
       {LocationDetail && (
@@ -323,4 +311,4 @@ const SignUpDetailedModal = ({ handleClose }) => {
   );
 };
 
-export default SignUpDetailedModal;
+export default SignUpDetailedsm;

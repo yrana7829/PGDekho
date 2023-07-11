@@ -1,0 +1,54 @@
+.detail-sm-21 {
+  font-size: 1rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 37px;
+  font-family: Plus Jakarta Sans;
+
+  font-weight: 700;
+
+  line-height: 36px;
+
+  color: #1a1e25;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.detail-sm-22 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+}
+.detail-sm-23 {
+  scale: 0.7;
+  margin-top: 0.5rem;
+  margin-bottom: -0.9rem;
+  padding: 0;
+}
+.detail-sm-24 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: auto !important;
+  padding-right: auto !important;
+}
+@media (max-width: 576px) {
+  .detail-sm-21 {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+/* Medium devices (e.g. tablets) */
+@media (min-width: 450px) and (max-width: 768px) {
+  .detail-sm {
+    width: 25rem !important;
+    height: 30rem !important;
+  }
+  .detail-sm-22 {
+    margin-top: -2rem !important;
+  }
+}

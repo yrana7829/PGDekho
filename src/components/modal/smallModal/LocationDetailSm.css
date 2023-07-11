@@ -1,0 +1,115 @@
+.location-sm-container {
+  align-items: center;
+}
+.location-sm-21 {
+  font-size: 1rem;
+
+  text-align: center;
+
+  height: 37px;
+  font-family: Plus Jakarta Sans;
+
+  font-weight: 700;
+
+  line-height: 36px;
+
+  color: #1a1e25;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.location-sm-content {
+  width: auto;
+  margin-top: 2rem;
+}
+
+.location-sm-title {
+  text-align: center;
+}
+
+.location-sm-description {
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  color: #7d7f88;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.location-sm-form {
+  padding: 0 2rem;
+}
+.location-sm-1 {
+  font-size: 0.8rem;
+}
+.location-sm-2 {
+  font-size: 0.8rem;
+}
+
+.location-sm-label {
+  font-size: 0.8rem;
+  font-family: Plus Jakarta Sans;
+
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0.013em;
+
+  padding-top: 1rem;
+}
+
+.location-sm-input {
+  width: 100% !important;
+
+  font-size: 0.7rem;
+}
+
+.location-sm-popular {
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+
+  margin-top: 1rem;
+}
+
+.location-sm-localities-list {
+  list-style-type: none;
+}
+
+.location-locality {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+
+  padding-top: 1rem !important;
+}
+
+.location-sm-btn {
+  display: flex;
+  margin-top: 2rem;
+}
+
+@media (max-width: 576px) {
+  .detail-sm-21 {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+/* Medium devices (e.g. tablets) */
+@media (min-width: 150px) and (max-width: 370px) {
+  .location-sm-1 {
+    font-size: 0.6rem;
+  }
+  .location-sm-2 {
+    font-size: 0.6rem;
+  }
+}

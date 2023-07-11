@@ -3,8 +3,8 @@
 .homeSection1 {
   width: auto;
   height: auto;
-  margin-top: 3.125rem; /* 50px */
-  margin-bottom: 3.125rem; /* 50px */
+  margin-top: 2rem; /* 50px */
+  margin-bottom: 2rem; /* 50px */
   overflow-y: hidden;
 }
 
@@ -37,8 +37,8 @@
 
 .homeSection2 {
   width: auto;
-  margin-top: 3.125rem; /* 50px */
-  margin-bottom: 3.125rem; /* 50px */
+  margin-top: 2rem; /* 50px */
+  margin-bottom: 2rem; /* 50px */
   height: auto;
   background: #f8f8fe;
   overflow-y: hidden;
@@ -59,8 +59,8 @@
   width: auto;
   margin-left: 6%;
   margin-right: 6%;
-  margin-top: 3.125rem; /* 50px */
-  margin-bottom: 3.125rem; /* 50px */
+  margin-top: 2rem; /* 50px */
+  margin-bottom: 2rem; /* 50px */
   padding: 1.25rem; /* 20px */
   height: 37.5rem; /* 600px */
 }
@@ -140,8 +140,8 @@
 .homeSection5 {
   width: auto;
   height: auto;
-  margin-top: 3.125rem; /* 50px */
-  margin-bottom: 3.125rem; /* 50px */
+  margin-top: 2rem; /* 50px */
+  margin-bottom: 2rem; /* 50px */
   align-items: center;
 }
 

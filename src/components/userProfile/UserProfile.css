@@ -1,12 +1,9 @@
-/* * {
-  background: #ffffff;
-} */
 .user-profile {
   position: absolute;
-  width: 320px;
-  height: 750px;
-  top: 12%;
-  margin-left: -3%;
+  width: 22rem;
+  height: 35rem;
+  top: 9.188rem;
+
   background: #ffffff;
   border: 1px solid rgba(210, 210, 210, 0.3);
   box-shadow: 0px 32px 64px -12px rgba(9, 9, 9, 0.1);
@@ -125,4 +122,19 @@
 
 .profile-button.active {
   background-color: #fa6e42 !important;
+}
+
+@media (min-width: 1300px) {
+  .user-profile {
+    position: absolute;
+    width: 25rem;
+    height: 35rem;
+    top: 9.188rem;
+
+    background: #ffffff;
+    border: 1px solid rgba(210, 210, 210, 0.3);
+    box-shadow: 0px 32px 64px -12px rgba(9, 9, 9, 0.1);
+    border-radius: 30px;
+    border-radius: 30px;
+  }
 }

@@ -30,7 +30,7 @@
   width: 119.86px;
   height: 20px;
 
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 13.5693px;
@@ -44,35 +44,6 @@
 }
 
 /* Modals CSS Starts */
-
-.signUpModalBody {
-  height: 400px;
-  width: 962px;
-  overflow: hidden;
-  background: linear-gradient(
-    180deg,
-    rgba(251, 251, 251, 0) 53.59%,
-    #fcfcfc 87.94%
-  );
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  gap: 25.01px;
-}
-.signUpSec1 {
-  height: 565px;
-
-  background: linear-gradient(
-    180deg,
-    rgba(251, 251, 251, 0) 53.59%,
-    #fcfcfc 87.94%
-  );
-}
-
-.modal-fade-show {
-  display: block;
-}
 
 .btn-style {
   height: 56.84px;
@@ -136,7 +107,7 @@
   font-size: 16px;
 }
 .singup-modal-sec23 {
-  width: '362px';
+  width: "362px";
   height: 56.84px;
 
   border-radius: 11.37px;
@@ -148,21 +119,20 @@
 }
 
 .modal-dialog {
-  max-width: 962px; /* Set the maximum width */
-  margin: auto; /* Center the modal horizontally */
+  max-width: 962px;
+  margin: auto;
 }
 
 .modal-content {
-  width: 100%; /* Set the width to 100% */
-  border-radius: 0; /* Remove border radius */
+  width: 100%;
+  border-radius: 0;
 }
 
 .signUpModalBody {
-  padding: 15px; /* Add padding to the modal body */
+  padding: 15px;
 }
 
 .singup-modal-sec2 {
-  /* Remove the absolute positioning and set width to 100% */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -239,7 +209,7 @@
   left: 54%;
   top: 58%;
 
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -292,7 +262,7 @@
 .top-div-text {
   margin-top: 25px;
 
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -309,7 +279,7 @@
   text-align: left;
   width: 577px;
   height: 70px;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -415,8 +385,8 @@
   position: absolute;
   width: 681px;
 
-  font-family: 'Plus Jakarta Sans';
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans";
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;

@@ -1,0 +1,37 @@
+.banner-card {
+  height: 26.411rem;
+  width: 19.688rem !important;
+  margin-top: 4rem;
+}
+.Banner-last-row {
+}
+.align-items-center {
+  margin-top: -1rem;
+}
+.banner-room {
+  margin-left: -1rem;
+}
+.banner-location {
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .pic-modal {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .banner-card {
+    height: 25.411rem;
+    width: 18.688rem !important;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-card {
+    height: 25.411rem;
+    width: 20.688rem !important;
+    margin-top: 4rem;
+  }
+}

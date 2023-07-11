@@ -1,0 +1,35 @@
+.custom-inputsm-otp {
+  width: 3rem !important;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+.singup-modalotp-sec21 {
+  width: auto;
+  height: auto;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  line-height: 36px;
+  text-align: center;
+  color: #1a1e25;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.singup-modalotp-sec23 {
+  width: 100%;
+  height: 3rem;
+
+  border-radius: 11.37px;
+
+  background: #ffffff;
+  border: 0.91px solid #e3e3e7;
+  font-weight: 500;
+  font-size: 16px;
+}
